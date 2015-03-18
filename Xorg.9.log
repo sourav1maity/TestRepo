@@ -1,0 +1,430 @@
+[   153.769] 
+X.Org X Server 1.13.0
+Release Date: 2012-09-05
+[   153.769] X Protocol Version 11, Revision 0
+[   153.769] Build Operating System: c6b8 2.6.32-220.el6.x86_64 
+[   153.769] Current Operating System: Linux zimbra.webskitters.com 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64
+[   153.770] Kernel command line: ro root=/dev/mapper/vg_zimbra-root rd_NO_LUKS LANG=us rd_LVM_LV=vg_zimbra/swap rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=129M@0M rd_LVM_LV=vg_zimbra/root  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM 1
+[   153.770] Build Date: 22 November 2013  06:08:52PM
+[   153.770] Build ID: xorg-x11-server 1.13.0-23.el6.centos 
+[   153.770] Current version of pixman: 0.26.2
+[   153.770] 	Before reporting problems, check https://www.redhat.com/apps/support/
+	to make sure that you have the latest version.
+[   153.770] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   153.770] (==) Log file: "/var/log/Xorg.9.log", Time: Thu Oct  2 01:10:21 2014
+[   153.841] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   153.857] (==) No Layout section.  Using the first Screen section.
+[   153.857] (==) No screen section available. Using defaults.
+[   153.857] (**) |-->Screen "Default Screen Section" (0)
+[   153.857] (**) |   |-->Monitor "<default monitor>"
+[   153.866] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   153.866] (==) Automatically adding devices
+[   153.866] (==) Automatically enabling devices
+[   153.866] (==) Not automatically adding GPU devices
+[   153.866] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[   153.866] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[   153.866] (II) The server relies on HAL to provide the list of input devices.
+	If no devices become available, reconfigure HAL or disable AutoAddDevices.
+[   153.866] (II) Loader magic: 0x813020
+[   153.866] (II) Module ABI versions:
+[   153.866] 	X.Org ANSI C Emulation: 0.4
+[   153.866] 	X.Org Video Driver: 13.1
+[   153.866] 	X.Org XInput driver : 18.1
+[   153.866] 	X.Org Server Extension : 7.0
+[   153.867] (--) PCI:*(0:0:2:0) 8086:0152:8086:2017 rev 9, Mem @ 0xf7400000/4194304, 0xd0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[   153.867] (--) PCI: (0:1:0:0) 10de:104a:19da:6222 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/134217728, 0xe8000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/524288
+[   153.869] Initializing built-in extension Generic Event Extension
+[   153.869] Initializing built-in extension SHAPE
+[   153.869] Initializing built-in extension MIT-SHM
+[   153.869] Initializing built-in extension XInputExtension
+[   153.869] Initializing built-in extension XTEST
+[   153.869] Initializing built-in extension BIG-REQUESTS
+[   153.869] Initializing built-in extension SYNC
+[   153.869] Initializing built-in extension XKEYBOARD
+[   153.869] Initializing built-in extension XC-MISC
+[   153.869] Initializing built-in extension SECURITY
+[   153.869] Initializing built-in extension XINERAMA
+[   153.869] Initializing built-in extension XFIXES
+[   153.869] Initializing built-in extension RENDER
+[   153.869] Initializing built-in extension RANDR
+[   153.869] Initializing built-in extension COMPOSITE
+[   153.869] Initializing built-in extension DAMAGE
+[   153.869] Initializing built-in extension MIT-SCREEN-SAVER
+[   153.869] Initializing built-in extension DOUBLE-BUFFER
+[   153.869] Initializing built-in extension RECORD
+[   153.869] Initializing built-in extension DPMS
+[   153.869] Initializing built-in extension X-Resource
+[   153.869] Initializing built-in extension XVideo
+[   153.869] Initializing built-in extension XVideo-MotionCompensation
+[   153.869] Initializing built-in extension SELinux
+[   153.869] Initializing built-in extension XFree86-VidModeExtension
+[   153.869] Initializing built-in extension XFree86-DGA
+[   153.869] Initializing built-in extension XFree86-DRI
+[   153.869] Initializing built-in extension DRI2
+[   153.869] (II) "glx" will be loaded by default.
+[   153.869] (II) LoadModule: "dri2"
+[   153.869] (II) Module "dri2" already built-in
+[   153.869] (II) LoadModule: "glamoregl"
+[   153.897] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[   153.915] (II) Module glamoregl: vendor="X.Org Foundation"
+[   153.915] 	compiled for 1.13.0, module version = 0.5.0
+[   153.915] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   153.915] (II) LoadModule: "glx"
+[   153.915] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[   153.934] (II) Module glx: vendor="X.Org Foundation"
+[   153.934] 	compiled for 1.13.0, module version = 1.0.0
+[   153.934] 	ABI class: X.Org Server Extension, version 7.0
+[   153.934] (==) AIGLX enabled
+[   153.935] Loading extension GLX
+[   153.935] (==) Matched intel as autoconfigured driver 0
+[   153.935] (==) Matched vesa as autoconfigured driver 1
+[   153.935] (==) Matched modesetting as autoconfigured driver 2
+[   153.935] (==) Matched fbdev as autoconfigured driver 3
+[   153.935] (==) Assigned the driver to the xf86ConfigLayout
+[   153.935] (II) LoadModule: "intel"
+[   153.935] (II) Loading /usr/lib64/xorg/modules/drivers/intel_drv.so
+[   153.965] (II) Module intel: vendor="X.Org Foundation"
+[   153.965] 	compiled for 1.13.0, module version = 2.21.12
+[   153.965] 	Module class: X.Org Video Driver
+[   153.965] 	ABI class: X.Org Video Driver, version 13.1
+[   153.965] (II) LoadModule: "vesa"
+[   153.965] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[   153.965] (II) Module vesa: vendor="X.Org Foundation"
+[   153.965] 	compiled for 1.13.0, module version = 2.3.2
+[   153.965] 	Module class: X.Org Video Driver
+[   153.965] 	ABI class: X.Org Video Driver, version 13.1
+[   153.965] (II) LoadModule: "modesetting"
+[   153.966] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[   153.971] (II) Module modesetting: vendor="X.Org Foundation"
+[   153.971] 	compiled for 1.13.0, module version = 0.5.0
+[   153.971] 	Module class: X.Org Video Driver
+[   153.971] 	ABI class: X.Org Video Driver, version 13.1
+[   153.971] (II) LoadModule: "fbdev"
+[   153.971] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[   153.979] (II) Module fbdev: vendor="X.Org Foundation"
+[   153.979] 	compiled for 1.13.0, module version = 0.4.3
+[   153.979] 	Module class: X.Org Video Driver
+[   153.979] 	ABI class: X.Org Video Driver, version 13.1
+[   153.979] (II) intel: Driver for Intel Integrated Graphics Chipsets: i810,
+	i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G, 915G,
+	E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM, Pineview G,
+	965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33, GM45,
+	4 Series, G45/G43, Q45/Q43, G41, B43, B43, Clarkdale, Arrandale,
+	Sandybridge Desktop (GT1), Sandybridge Desktop (GT2),
+	Sandybridge Desktop (GT2+), Sandybridge Mobile (GT1),
+	Sandybridge Mobile (GT2), Sandybridge Mobile (GT2+),
+	Sandybridge Server, Ivybridge Mobile (GT1), Ivybridge Mobile (GT2),
+	Ivybridge Desktop (GT1), Ivybridge Desktop (GT2), Ivybridge Server,
+	Ivybridge Server (GT2), HD Graphics, HD Graphics 4600,
+	Haswell Desktop (GT3), HD Graphics, HD Graphics 4600,
+	Haswell Mobile (GT3), HD Graphics, HD Graphics P4600/P4700,
+	Haswell Server (GT3), Haswell (GT1), Haswell (GT2), Haswell (GT3),
+	HD Graphics, Haswell (GT2), Haswell (GT3), Haswell SDV Desktop (GT1),
+	Haswell SDV Desktop (GT2), Haswell SDV Desktop (GT3),
+	Haswell SDV Mobile (GT1), Haswell SDV Mobile (GT2),
+	Haswell SDV Mobile (GT3), Haswell SDV Server (GT1),
+	Haswell SDV Server (GT2), Haswell SDV Server (GT3),
+	Haswell SDV (GT1), Haswell SDV (GT2), Haswell SDV (GT3),
+	Haswell SDV (GT1), Haswell SDV (GT2), Haswell SDV (GT3),
+	Haswell ULT Desktop (GT1), Haswell ULT Desktop (GT2),
+	Iris(TM) Graphics 5100, HD Graphics, HD Graphics 4400,
+	HD Graphics 5000, Haswell ULT Server (GT1), Haswell ULT Server (GT2),
+	Iris(TM) Graphics 5100, Haswell ULT (GT1), Haswell ULT (GT2),
+	Iris(TM) Graphics 5100, HD Graphics, HD Graphics 4200,
+	Iris(TM) Graphics 5100, Haswell CRW Desktop (GT1), HD Graphics 4600,
+	Iris(TM) Pro Graphics 5200, Haswell CRW Mobile (GT1),
+	HD Graphics 4600, Iris(TM) Pro Graphics 5200,
+	Haswell CRW Server (GT1), Haswell CRW Server (GT2),
+	Iris(TM) Pro Graphics 5200, Haswell CRW (GT1), Haswell CRW (GT2),
+	Iris(TM) Pro Graphics 5200, Haswell CRW (GT1), Haswell CRW (GT2),
+	Iris(TM) Pro Graphics 5200, ValleyView PO board
+[   153.979] (II) VESA: driver for VESA chipsets: vesa
+[   153.979] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   153.979] (II) FBDEV: driver for framebuffer: fbdev
+[   153.979] (++) using VT number 6
+
+[   153.988] (WW) Falling back to old probe method for vesa
+[   153.988] (WW) Falling back to old probe method for modesetting
+[   153.988] (WW) Falling back to old probe method for fbdev
+[   153.988] (II) Loading sub module "fbdevhw"
+[   153.988] (II) LoadModule: "fbdevhw"
+[   153.989] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[   153.996] (II) Module fbdevhw: vendor="X.Org Foundation"
+[   153.996] 	compiled for 1.13.0, module version = 0.0.2
+[   153.996] 	ABI class: X.Org Video Driver, version 13.1
+[   153.996] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   153.996] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[   153.996] (==) intel(0): RGB weight 888
+[   153.996] (==) intel(0): Default visual is TrueColor
+[   153.996] (--) intel(0): Integrated Graphics Chipset: Intel(R) Ivybridge Desktop (GT1)
+[   153.996] (**) intel(0): Relaxed fencing enabled
+[   153.996] (**) intel(0): Wait on SwapBuffers? enabled
+[   153.996] (**) intel(0): Triple buffering? enabled
+[   153.996] (**) intel(0): Framebuffer tiled
+[   153.996] (**) intel(0): Pixmaps tiled
+[   153.996] (**) intel(0): 3D buffers tiled
+[   153.997] (**) intel(0): SwapBuffers wait enabled
+[   153.997] (==) intel(0): video overlay key set to 0x101fe
+[   154.010] (II) intel(0): Output VGA2 has no monitor section
+[   154.023] (II) intel(0): EDID for output VGA2
+[   154.023] (II) intel(0): Manufacturer: AOC  Model: 1831  Serial#: 0
+[   154.023] (II) intel(0): Year: 2011  Week: 0
+[   154.023] (II) intel(0): EDID Version: 1.3
+[   154.023] (II) intel(0): Analog Display Input,  Input Voltage Level: 0.700/0.700 V
+[   154.023] (II) intel(0): Sync:  Separate
+[   154.023] (II) intel(0): Max Image Size [cm]: horiz.: 41  vert.: 23
+[   154.023] (II) intel(0): Gamma: 2.20
+[   154.023] (II) intel(0): DPMS capabilities: Off; RGB/Color Display
+[   154.023] (II) intel(0): First detailed timing is preferred mode
+[   154.023] (II) intel(0): redX: 0.647 redY: 0.334   greenX: 0.284 greenY: 0.607
+[   154.023] (II) intel(0): blueX: 0.151 blueY: 0.071   whiteX: 0.312 whiteY: 0.329
+[   154.023] (II) intel(0): Supported established timings:
+[   154.023] (II) intel(0): 720x400@70Hz
+[   154.023] (II) intel(0): 640x480@60Hz
+[   154.023] (II) intel(0): 640x480@67Hz
+[   154.023] (II) intel(0): 640x480@72Hz
+[   154.023] (II) intel(0): 640x480@75Hz
+[   154.023] (II) intel(0): 800x600@56Hz
+[   154.023] (II) intel(0): 800x600@60Hz
+[   154.023] (II) intel(0): 800x600@72Hz
+[   154.023] (II) intel(0): 800x600@75Hz
+[   154.023] (II) intel(0): 832x624@75Hz
+[   154.023] (II) intel(0): 1024x768@60Hz
+[   154.023] (II) intel(0): 1024x768@70Hz
+[   154.023] (II) intel(0): 1024x768@75Hz
+[   154.023] (II) intel(0): Manufacturer's mask: 0
+[   154.023] (II) intel(0): Supported standard timings:
+[   154.023] (II) intel(0): #0: hsize: 640  vsize 400  refresh: 70  vid: 2609
+[   154.023] (II) intel(0): #1: hsize: 1024  vsize 768  refresh: 72  vid: 19553
+[   154.023] (II) intel(0): Supported detailed timing:
+[   154.023] (II) intel(0): clock: 85.5 MHz   Image Size:  413 x 234 mm
+[   154.023] (II) intel(0): h_active: 1366  h_sync: 1436  h_sync_end 1579 h_blank_end 1792 h_border: 0
+[   154.023] (II) intel(0): v_active: 768  v_sync: 771  v_sync_end 774 v_blanking: 798 v_border: 0
+[   154.023] (II) intel(0): Supported detailed timing:
+[   154.023] (II) intel(0): clock: 85.5 MHz   Image Size:  34 x 19 mm
+[   154.023] (II) intel(0): h_active: 1360  h_sync: 1424  h_sync_end 1536 h_blank_end 1792 h_border: 0
+[   154.023] (II) intel(0): v_active: 768  v_sync: 771  v_sync_end 777 v_blanking: 795 v_border: 0
+[   154.023] (II) intel(0): Ranges: V min: 55 V max: 75 Hz, H min: 30 H max: 81 kHz, PixClock max 95 MHz
+[   154.023] (II) intel(0): Monitor name: 831W
+[   154.023] (II) intel(0): EDID (in hex):
+[   154.023] (II) intel(0): 	00ffffffffffff0005e3311800000000
+[   154.023] (II) intel(0): 	00150103682917782aeed1a555489b26
+[   154.023] (II) intel(0): 	125054bfee00310a614c010101010101
+[   154.023] (II) intel(0): 	010101010101662156aa51001e30468f
+[   154.023] (II) intel(0): 	33009dea1000001e662150b051001b30
+[   154.023] (II) intel(0): 	4070360022130000001e000000fd0037
+[   154.023] (II) intel(0): 	4b1e5109000a202020202020000000fc
+[   154.023] (II) intel(0): 	00383331570a20202020202020200060
+[   154.023] (II) intel(0): Printing probed modes for output VGA2
+[   154.023] (II) intel(0): Modeline "1366x768"x59.8   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz eP)
+[   154.023] (II) intel(0): Modeline "1360x768"x60.0   85.50  1360 1424 1536 1792  768 771 777 795 +hsync +vsync (47.7 kHz e)
+[   154.023] (II) intel(0): Modeline "1024x768"x75.1   78.80  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.1 kHz e)
+[   154.023] (II) intel(0): Modeline "1024x768"x72.0   78.44  1024 1080 1192 1360  768 769 772 801 -hsync +vsync (57.7 kHz)
+[   154.023] (II) intel(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[   154.023] (II) intel(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   154.023] (II) intel(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[   154.023] (II) intel(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[   154.023] (II) intel(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[   154.023] (II) intel(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   154.023] (II) intel(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[   154.023] (II) intel(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 491 520 -hsync -vsync (37.9 kHz e)
+[   154.023] (II) intel(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[   154.023] (II) intel(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[   154.023] (II) intel(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   154.023] (II) intel(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   154.023] (II) intel(0): Output VGA2 connected
+[   154.023] (II) intel(0): Using exact sizes for initial modes
+[   154.023] (II) intel(0): Output VGA2 using initial mode 1366x768 +0+0
+[   154.023] (II) intel(0): Using default gamma of (1.0, 1.0, 1.0) unless otherwise stated.
+[   154.023] (II) intel(0): Kernel page flipping support detected, enabling
+[   154.023] (==) intel(0): DPI set to (96, 96)
+[   154.023] (II) Loading sub module "fb"
+[   154.023] (II) LoadModule: "fb"
+[   154.023] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[   154.025] (II) Module fb: vendor="X.Org Foundation"
+[   154.025] 	compiled for 1.13.0, module version = 1.0.0
+[   154.025] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   154.025] (II) Loading sub module "dri2"
+[   154.025] (II) LoadModule: "dri2"
+[   154.025] (II) Module "dri2" already built-in
+[   154.025] (II) UnloadModule: "vesa"
+[   154.025] (II) Unloading vesa
+[   154.025] (II) UnloadModule: "modesetting"
+[   154.025] (II) Unloading modesetting
+[   154.025] (II) UnloadModule: "fbdev"
+[   154.025] (II) Unloading fbdev
+[   154.025] (II) UnloadSubModule: "fbdevhw"
+[   154.025] (II) Unloading fbdevhw
+[   154.025] (==) Depth 24 pixmap format is 32 bpp
+[   154.041] (II) intel(0): [DRI2] Setup complete
+[   154.041] (II) intel(0): [DRI2]   DRI driver: i965
+[   154.041] (II) intel(0): Allocated new frame buffer 1408x768 stride 5632, tiled
+[   154.046] (II) UXA(0): Driver registered support for the following operations:
+[   154.046] (II)         solid
+[   154.046] (II)         copy
+[   154.046] (II)         composite (RENDER acceleration)
+[   154.046] (II)         put_image
+[   154.046] (II)         get_image
+[   154.046] (==) intel(0): Backing store disabled
+[   154.046] (==) intel(0): Silken mouse enabled
+[   154.047] (II) intel(0): Initializing HW Cursor
+[   154.047] (II) intel(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[   154.048] (==) intel(0): DPMS enabled
+[   154.048] (==) intel(0): Intel XvMC decoder enabled
+[   154.048] (II) intel(0): Set up textured video
+[   154.048] (II) intel(0): [XvMC] xvmc_vld driver initialized.
+[   154.048] (II) intel(0): direct rendering: DRI2 Enabled
+[   154.048] (==) intel(0): hotplug detection: "enabled"
+[   154.061] (--) RandR disabled
+[   154.074] (II) SELinux: Disabled by boolean
+[   154.203] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+[   154.203] (II) AIGLX: enabled GLX_INTEL_swap_event
+[   154.203] (II) AIGLX: enabled GLX_ARB_create_context
+[   154.203] (II) AIGLX: enabled GLX_ARB_create_context_profile
+[   154.203] (II) AIGLX: enabled GLX_EXT_create_context_es2_profile
+[   154.203] (II) AIGLX: enabled GLX_SGI_swap_control and GLX_MESA_swap_control
+[   154.203] (II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+[   154.203] (II) AIGLX: Loaded and initialized i965
+[   154.203] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   154.203] (II) intel(0): Setting screen physical size to 361 x 203
+[   154.672] (II) config/hal: Adding input device AT Translated Set 2 keyboard
+[   154.672] (II) LoadModule: "evdev"
+[   154.673] (II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+[   154.808] (II) Module evdev: vendor="X.Org Foundation"
+[   154.808] 	compiled for 1.13.0, module version = 2.7.3
+[   154.808] 	Module class: X.Org XInput Driver
+[   154.808] 	ABI class: X.Org XInput driver, version 18.0
+[   154.808] (II) Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[   154.808] (**) AT Translated Set 2 keyboard: always reports core events
+[   154.808] (**) evdev: AT Translated Set 2 keyboard: Device: "/dev/input/event3"
+[   154.816] (--) evdev: AT Translated Set 2 keyboard: Vendor 0x1 Product 0x1
+[   154.816] (--) evdev: AT Translated Set 2 keyboard: Found keys
+[   154.816] (II) evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[   154.816] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/platform_i8042_i8042_KBD_port_logicaldev_input"
+[   154.816] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 6)
+[   154.816] (**) Option "xkb_rules" "evdev"
+[   154.816] (**) Option "xkb_model" "pc105+inet"
+[   154.816] (**) Option "xkb_layout" "us"
+[   154.816] (WW) Option "xkb_variant" requires an string value
+[   154.816] (WW) Option "XkbVariant" requires an string value
+[   154.816] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[   154.861] (II) config/hal: Adding input device Power Button
+[   154.861] (II) Using input driver 'evdev' for 'Power Button'
+[   154.861] (**) Power Button: always reports core events
+[   154.861] (**) evdev: Power Button: Device: "/dev/input/event0"
+[   154.868] (--) evdev: Power Button: Vendor 0 Product 0x1
+[   154.868] (--) evdev: Power Button: Found keys
+[   154.868] (II) evdev: Power Button: Configuring as keyboard
+[   154.868] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/computer_logicaldev_input_1"
+[   154.868] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[   154.868] (**) Option "xkb_rules" "evdev"
+[   154.868] (**) Option "xkb_model" "pc105+inet"
+[   154.868] (**) Option "xkb_layout" "us"
+[   154.868] (WW) Option "xkb_variant" requires an string value
+[   154.868] (WW) Option "XkbVariant" requires an string value
+[   154.868] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[   154.874] (II) config/hal: Adding input device Video Bus
+[   154.874] (II) Using input driver 'evdev' for 'Video Bus'
+[   154.874] (**) Video Bus: always reports core events
+[   154.874] (**) evdev: Video Bus: Device: "/dev/input/event5"
+[   154.884] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[   154.884] (--) evdev: Video Bus: Found keys
+[   154.884] (II) evdev: Video Bus: Configuring as keyboard
+[   154.884] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/computer_logicaldev_input_0"
+[   154.884] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   154.884] (**) Option "xkb_rules" "evdev"
+[   154.884] (**) Option "xkb_model" "pc105+inet"
+[   154.884] (**) Option "xkb_layout" "us"
+[   154.884] (WW) Option "xkb_variant" requires an string value
+[   154.884] (WW) Option "XkbVariant" requires an string value
+[   154.884] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[   154.888] (II) config/hal: Adding input device Power Button
+[   154.888] (II) Using input driver 'evdev' for 'Power Button'
+[   154.888] (**) Power Button: always reports core events
+[   154.888] (**) evdev: Power Button: Device: "/dev/input/event1"
+[   154.896] (--) evdev: Power Button: Vendor 0 Product 0x1
+[   154.896] (--) evdev: Power Button: Found keys
+[   154.896] (II) evdev: Power Button: Configuring as keyboard
+[   154.896] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/computer_logicaldev_input"
+[   154.896] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[   154.896] (**) Option "xkb_rules" "evdev"
+[   154.896] (**) Option "xkb_model" "pc105+inet"
+[   154.896] (**) Option "xkb_layout" "us"
+[   154.896] (WW) Option "xkb_variant" requires an string value
+[   154.896] (WW) Option "XkbVariant" requires an string value
+[   154.896] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[   154.900] (II) config/hal: Adding input device Macintosh mouse button emulation
+[   154.900] (II) Using input driver 'evdev' for 'Macintosh mouse button emulation'
+[   154.900] (**) Macintosh mouse button emulation: always reports core events
+[   154.900] (**) evdev: Macintosh mouse button emulation: Device: "/dev/input/event2"
+[   154.908] (--) evdev: Macintosh mouse button emulation: Vendor 0x1 Product 0x1
+[   154.908] (--) evdev: Macintosh mouse button emulation: Found 3 mouse buttons
+[   154.908] (--) evdev: Macintosh mouse button emulation: Found relative axes
+[   154.908] (--) evdev: Macintosh mouse button emulation: Found x and y relative axes
+[   154.908] (II) evdev: Macintosh mouse button emulation: Configuring as mouse
+[   154.908] (**) evdev: Macintosh mouse button emulation: YAxisMapping: buttons 4 and 5
+[   154.908] (**) evdev: Macintosh mouse button emulation: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   154.908] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/computer_logicaldev_input_2"
+[   154.908] (II) XINPUT: Adding extended input device "Macintosh mouse button emulation" (type: MOUSE, id 10)
+[   154.908] (II) evdev: Macintosh mouse button emulation: initialized for relative axes.
+[   154.908] (**) Macintosh mouse button emulation: (accel) keeping acceleration scheme 1
+[   154.908] (**) Macintosh mouse button emulation: (accel) acceleration profile 0
+[   154.908] (**) Macintosh mouse button emulation: (accel) acceleration factor: 2.000
+[   154.908] (**) Macintosh mouse button emulation: (accel) acceleration threshold: 4
+[   154.912] (II) config/hal: Adding input device SIGMACHIP Usb Mouse
+[   154.912] (II) Using input driver 'evdev' for 'SIGMACHIP Usb Mouse'
+[   154.912] (**) SIGMACHIP Usb Mouse: always reports core events
+[   154.912] (**) evdev: SIGMACHIP Usb Mouse: Device: "/dev/input/event4"
+[   154.924] (--) evdev: SIGMACHIP Usb Mouse: Vendor 0x1c4f Product 0x32
+[   154.924] (--) evdev: SIGMACHIP Usb Mouse: Found 9 mouse buttons
+[   154.924] (--) evdev: SIGMACHIP Usb Mouse: Found scroll wheel(s)
+[   154.924] (--) evdev: SIGMACHIP Usb Mouse: Found relative axes
+[   154.924] (--) evdev: SIGMACHIP Usb Mouse: Found x and y relative axes
+[   154.924] (II) evdev: SIGMACHIP Usb Mouse: Configuring as mouse
+[   154.924] (II) evdev: SIGMACHIP Usb Mouse: Adding scrollwheel support
+[   154.924] (**) evdev: SIGMACHIP Usb Mouse: YAxisMapping: buttons 4 and 5
+[   154.924] (**) evdev: SIGMACHIP Usb Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   154.924] (**) Option "config_info" "hal:/org/freedesktop/Hal/devices/usb_device_1c4f_32_noserial_if0_logicaldev_input"
+[   154.924] (II) XINPUT: Adding extended input device "SIGMACHIP Usb Mouse" (type: MOUSE, id 11)
+[   154.924] (II) evdev: SIGMACHIP Usb Mouse: initialized for relative axes.
+[   154.924] (**) SIGMACHIP Usb Mouse: (accel) keeping acceleration scheme 1
+[   154.924] (**) SIGMACHIP Usb Mouse: (accel) acceleration profile 0
+[   154.924] (**) SIGMACHIP Usb Mouse: (accel) acceleration factor: 2.000
+[   154.924] (**) SIGMACHIP Usb Mouse: (accel) acceleration threshold: 4
+[   154.928] (II) config/hal: Adding input device HDA NVidia HDMI/DP,pcm=7
+[   154.928] (II) Using input driver 'evdev' for 'HDA NVidia HDMI/DP,pcm=7'
+[   154.928] (**) HDA NVidia HDMI/DP,pcm=7: always reports core events
+[   154.928] (**) evdev: HDA NVidia HDMI/DP,pcm=7: Device: "/dev/input/event9"
+[   154.936] (--) evdev: HDA NVidia HDMI/DP,pcm=7: Vendor 0 Product 0
+[   154.936] (WW) evdev: HDA NVidia HDMI/DP,pcm=7: Don't know how to use device
+[   154.952] (EE) PreInit returned 8 for "HDA NVidia HDMI/DP,pcm=7"
+[   154.952] (II) UnloadModule: "evdev"
+[   154.952] (EE) config/hal: NewInputDeviceRequest failed (8)
+[   154.956] (II) config/hal: Adding input device HDA NVidia HDMI/DP,pcm=3
+[   154.956] (II) Using input driver 'evdev' for 'HDA NVidia HDMI/DP,pcm=3'
+[   154.956] (**) HDA NVidia HDMI/DP,pcm=3: always reports core events
+[   154.956] (**) evdev: HDA NVidia HDMI/DP,pcm=3: Device: "/dev/input/event10"
+[   154.964] (--) evdev: HDA NVidia HDMI/DP,pcm=3: Vendor 0 Product 0
+[   154.964] (WW) evdev: HDA NVidia HDMI/DP,pcm=3: Don't know how to use device
+[   154.980] (EE) PreInit returned 8 for "HDA NVidia HDMI/DP,pcm=3"
+[   154.980] (II) UnloadModule: "evdev"
+[   154.980] (EE) config/hal: NewInputDeviceRequest failed (8)
+[   222.811] (II) evdev: SIGMACHIP Usb Mouse: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   222.811] (II) evdev: Macintosh mouse button emulation: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   222.811] (II) evdev: Power Button: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   222.811] (II) evdev: Video Bus: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   222.811] (II) evdev: Power Button: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   222.811] (II) evdev: AT Translated Set 2 keyboard: Close
+[   222.811] (II) UnloadModule: "evdev"
+[   223.046] Server terminated successfully (0). Closing log file.

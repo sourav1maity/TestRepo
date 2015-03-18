@@ -1,0 +1,391 @@
+18:55:13,530 INFO    : kernel command line: method=nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64 lang=us keymap=us ip=dhcp ksdevice=eth0 noipv6 initrd=CentOS/x64/initrd.img ramdisk_size=10000 BOOT_IMAGE=CentOS/x64/vmlinuz 
+
+18:55:13,530 WARNING : method= is deprecated.  Please use repo= instead.
+18:55:13,530 DEBUG   : readNetInfo /tmp/s390net not found, early return
+18:55:13,530 INFO    : anaconda version 13.21.215 on x86_64 starting
+18:55:16,586 ERROR   : unable to set to requested language us
+18:55:16,586 DEBUG   : Saving module iscsi_ibft
+18:55:16,586 DEBUG   : Saving module iscsi_boot_sysfs
+18:55:16,586 DEBUG   : Saving module pcspkr
+18:55:16,586 DEBUG   : Saving module edd
+18:55:16,586 DEBUG   : Saving module iscsi_tcp
+18:55:16,586 DEBUG   : Saving module libiscsi_tcp
+18:55:16,586 DEBUG   : Saving module libiscsi
+18:55:16,586 DEBUG   : Saving module scsi_transport_iscsi
+18:55:16,586 DEBUG   : Saving module squashfs
+18:55:16,586 DEBUG   : Saving module cramfs
+18:55:16,586 DEBUG   : probing buses
+18:55:16,594 DEBUG   : waiting for hardware to initialize
+18:55:26,956 DEBUG   : probing buses
+18:55:26,964 DEBUG   : waiting for hardware to initialize
+18:55:30,576 INFO    : trying to mount CD device /dev/sr0 on /mnt/stage2
+18:55:30,583 INFO    : drive status is CDS_NO_DISC
+18:55:30,584 INFO    : no stage2= given, assuming nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/install.img
+18:55:30,584 DEBUG   : parseNfsHostPathOpts url: |10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/install.img|
+18:55:30,584 DEBUG   : parseNfsHostPathOpts host: |10.33.130.1|
+18:55:30,584 DEBUG   : parseNfsHostPathOpts path: |/var/ftp/pub/os/CentOS/x64/images/install.img|
+18:55:30,584 DEBUG   : parseNfsHostPathOpts opts: |(null)|
+18:55:30,584 ERROR   : unable to set to requested language us
+18:55:30,585 INFO    : starting STEP_METHOD
+18:55:30,585 DEBUG   : loaderData->method is set, adding skipMethodDialog
+18:55:30,585 DEBUG   : skipMethodDialog is set
+18:55:30,587 INFO    : need to set up networking
+18:55:30,587 INFO    : going to pick interface
+18:55:30,588 INFO    : eth0 still has no link, waiting
+18:55:31,588 INFO    : eth0 still has no link, waiting
+18:55:32,588 INFO    : eth0 still has no link, waiting
+18:55:33,588 INFO    : eth0 still has no link, waiting
+18:55:34,588 INFO    : eth0 still has no link, waiting
+18:55:35,589 INFO    : going to do getNetConfig
+18:55:35,589 INFO    : doing kickstart... setting it up
+18:55:35,589 DEBUG   : activating device eth0
+18:55:38,541 INFO    : wait_for_iface_activation (2502): device eth0 activated
+18:55:38,541 INFO    : starting STEP_STAGE2
+18:55:38,541 INFO    : host is 10.33.130.1, dir is /var/ftp/pub/os/CentOS/x64/images/install.img, opts are 'ro'
+18:55:38,541 INFO    : mounting nfs path 10.33.130.1:/var/ftp/pub/os/CentOS/x64/images
+18:55:38,692 INFO    : transferring /mnt/stage2//install.img to /tmp
+18:55:51,326 INFO    : mounted loopback device /mnt/runtime on /dev/loop0 as /tmp/install.img
+18:55:51,326 INFO    : Looking for updates in 10.33.130.1:/var/ftp/pub/os/CentOS/x64/RHupdates
+18:55:51,355 INFO    : No RHupdates/ directory found, skipping
+18:55:51,398 INFO    : Looking for updates in 10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/updates.img
+18:55:51,399 INFO    : Looking for product in 10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/product.img
+18:55:51,401 INFO    : got stage2 at url nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/install.img
+18:55:51,421 INFO    : Loading SELinux policy
+18:55:51,794 INFO    : getting ready to spawn shell now
+18:55:51,948 INFO    : Running anaconda script /usr/bin/anaconda
+18:55:53,763 INFO    : CentOS Linux is the highest priority installclass, using it
+18:55:53,766 INFO    : created new libuser.conf at /tmp/libuser.J0QyMI with instPath="/mnt/sysimage"
+18:55:53,767 INFO    : anaconda called with cmdline = ['/usr/bin/anaconda', '--stage2', 'nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64/images/install.img', '--noipv6', '--graphical', '--selinux', '--lang', 'us', '--keymap', 'us', '--repo', 'nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64']
+18:55:53,767 INFO    : Display mode = g
+18:55:53,767 INFO    : Default encoding = utf-8 
+18:55:53,903 DEBUG   : X server has signalled a successful start.
+18:55:53,905 INFO    : Starting window manager, pid 936.
+18:55:54,001 INFO    : Starting graphical installation.
+18:55:54,115 INFO    : Detected 7840M of memory
+18:55:54,115 INFO    : Swap attempt of 7840M
+18:55:54,316 WARNING : step installtype does not exist
+18:55:54,316 WARNING : step confirminstall does not exist
+18:55:54,316 WARNING : step complete does not exist
+18:55:55,122 INFO    : moving (1) to step welcome
+18:55:57,814 INFO    : leaving (1) step welcome
+18:55:57,814 INFO    : moving (1) to step filtertype
+18:55:58,997 INFO    : leaving (1) step filtertype
+18:55:58,997 INFO    : moving (1) to step filter
+18:55:59,006 INFO    : leaving (1) step filter
+18:55:59,006 INFO    : moving (1) to step storageinit
+18:55:59,006 DEBUG   : storageinit is a direct step
+18:55:59,041 INFO    : ISCSID is /usr/sbin/iscsid
+18:55:59,041 INFO    : no initiator set
+18:55:59,072 WARNING : '/usr/libexec/fcoe/fcoe_edd.sh' specified as full path
+18:55:59,078 INFO    : No FCoE EDD info found: No FCoE boot disk information is found in EDD!
+
+18:55:59,079 INFO    : no /etc/zfcp.conf; not configuring zfcp
+18:56:00,599 INFO    : leaving (1) step storageinit
+18:56:00,599 INFO    : moving (1) to step findrootparts
+18:56:00,599 DEBUG   : findrootparts is a direct step
+18:56:00,600 WARNING : step complete does not exist
+18:56:00,600 INFO    : leaving (1) step findrootparts
+18:56:00,600 INFO    : moving (1) to step network
+18:56:00,614 DEBUG   : Exception caught trying to get host name of 10.33.130.177: [Errno 2] Host name lookup failure
+18:56:25,997 INFO    : setting installation environment hostname to zimbra.webskitters.com
+18:56:26,001 INFO    : leaving (1) step network
+18:56:26,001 INFO    : moving (1) to step timezone
+18:56:29,405 INFO    : leaving (1) step timezone
+18:56:29,405 INFO    : moving (1) to step accounts
+18:56:43,093 INFO    : leaving (1) step accounts
+18:56:43,093 INFO    : moving (1) to step setuptime
+18:56:43,093 DEBUG   : setuptime is a direct step
+00:26:43,094 WARNING : '/usr/sbin/hwclock' specified as full path
+00:26:43,000 INFO    : leaving (1) step setuptime
+00:26:43,000 INFO    : moving (1) to step parttype
+00:26:46,024 INFO    : ISCSID is /usr/sbin/iscsid
+00:26:46,024 INFO    : no initiator set
+00:26:46,501 INFO    : leaving (1) step parttype
+00:26:46,501 INFO    : moving (1) to step partition
+00:26:51,383 INFO    : ISCSID is /usr/sbin/iscsid
+00:26:51,384 INFO    : no initiator set
+00:26:58,026 DEBUG   : refresh: justRedraw=None
+00:27:10,754 DEBUG   : refresh: justRedraw=True
+00:27:22,973 DEBUG   : refresh: justRedraw=False
+00:27:30,213 DEBUG   : refresh: justRedraw=False
+00:29:04,217 DEBUG   : finished editing vg
+00:29:04,217 DEBUG   : pvs: ['sda2']
+00:29:04,217 DEBUG   : luks: []
+00:29:04,217 DEBUG   : lv {'exists': False, 'snapshotSpace': 0, 'name': 'opt', 'originalFormat': <storage.formats.fs.Ext4FS object at 0x2498390>, 'format': <storage.formats.fs.Ext3FS object at 0x7fb815fa5e10>, 'metaDataSize': 0, 'copies': 1, 'logSize': 0, 'size': 50000L}
+00:29:04,217 DEBUG   : lv {'exists': False, 'snapshotSpace': 0, 'name': 'swap', 'originalFormat': <storage.formats.fs.Ext4FS object at 0x249d190>, 'format': <storage.formats.swap.SwapSpace object at 0x2498e10>, 'metaDataSize': 0, 'copies': 1, 'logSize': 0, 'size': 8192L}
+00:29:04,217 DEBUG   : lv {'exists': False, 'snapshotSpace': 0, 'name': 'var', 'originalFormat': <storage.formats.fs.Ext4FS object at 0x7fb815f81750>, 'format': <storage.formats.fs.Ext3FS object at 0x7fb815fa5ed0>, 'metaDataSize': 0, 'copies': 1, 'logSize': 0, 'size': 50000L}
+00:29:04,217 DEBUG   : lv {'exists': False, 'snapshotSpace': 0, 'name': 'root', 'originalFormat': <storage.formats.fs.Ext4FS object at 0x7fb815fa5150>, 'format': <storage.formats.fs.Ext3FS object at 0x7fb815f9aed0>, 'metaDataSize': 0, 'copies': 1, 'logSize': 0, 'size': 50000L}
+00:29:04,217 DEBUG   : non-existing vg -- setting up lvs, pvs, name, pesize
+00:29:04,229 DEBUG   : new lv LVMLogicalVolumeDevice instance (0x7fb815fa5e90) --
+  name = tmp-vg_zimbra-opt  status = False  parents = [<storage.devices.LVMVolumeGroupDevice object at 0x2498850>]
+  kids = 0
+  id = 74
+  uuid = None  format = <storage.formats.fs.Ext3FS object at 0x7fb815fa5e10>  size = 50000
+  major = 0  minor = 0  exists = False
+  sysfs path =   partedDevice = None
+  target size = 50000  path = /dev/mapper/tmp--vg_zimbra-opt
+  format args = []  originalFormat = Ext4FS instance (0x2498390) --
+  type = ext4  name = ext4  status = False
+  device = /dev/mapper/tmp--vg_zimbra-LogVol02  uuid = None  exists = None
+  options = defaults  supported = True  formattable = True  resizable = None
+  mountpoint = None  mountopts = None
+  label = None  size = 0  targetSize = 0
+  target = None  dmUuid = None  VG device = <storage.devices.LVMVolumeGroupDevice object at 0x2498850>  percent = 0
+  segment type = linear copies = 1  snapshot total =  0MB
+  VG space used = 50000MB
+00:29:04,229 DEBUG   : creating lv opt
+00:29:04,234 DEBUG   : new lv LVMLogicalVolumeDevice instance (0x7fb815fa5d90) --
+  name = tmp-vg_zimbra-swap  status = False  parents = [<storage.devices.LVMVolumeGroupDevice object at 0x2498850>]
+  kids = 0
+  id = 75
+  uuid = None  format = <storage.formats.swap.SwapSpace object at 0x2498e10>  size = 8192
+  major = 0  minor = 0  exists = False
+  sysfs path =   partedDevice = None
+  target size = 8192  path = /dev/mapper/tmp--vg_zimbra-swap
+  format args = []  originalFormat = Ext4FS instance (0x249d190) --
+  type = ext4  name = ext4  status = False
+  device = /dev/mapper/tmp--vg_zimbra-LogVol03  uuid = None  exists = None
+  options = defaults  supported = True  formattable = True  resizable = None
+  mountpoint = None  mountopts = None
+  label = None  size = 0  targetSize = 0
+  target = None  dmUuid = None  VG device = <storage.devices.LVMVolumeGroupDevice object at 0x2498850>  percent = 0
+  segment type = linear copies = 1  snapshot total =  0MB
+  VG space used = 8192MB
+00:29:04,234 DEBUG   : creating lv swap
+00:29:04,238 DEBUG   : new lv LVMLogicalVolumeDevice instance (0x7fb815fa5cd0) --
+  name = tmp-vg_zimbra-var  status = False  parents = [<storage.devices.LVMVolumeGroupDevice object at 0x2498850>]
+  kids = 0
+  id = 76
+  uuid = None  format = <storage.formats.fs.Ext3FS object at 0x7fb815fa5ed0>  size = 50000
+  major = 0  minor = 0  exists = False
+  sysfs path =   partedDevice = None
+  target size = 50000  path = /dev/mapper/tmp--vg_zimbra-var
+  format args = []  originalFormat = Ext4FS instance (0x7fb815f81750) --
+  type = ext4  name = ext4  status = False
+  device = /dev/mapper/tmp--vg_zimbra-LogVol01  uuid = None  exists = None
+  options = defaults  supported = True  formattable = True  resizable = None
+  mountpoint = None  mountopts = None
+  label = None  size = 0  targetSize = 0
+  target = None  dmUuid = None  VG device = <storage.devices.LVMVolumeGroupDevice object at 0x2498850>  percent = 0
+  segment type = linear copies = 1  snapshot total =  0MB
+  VG space used = 50000MB
+00:29:04,238 DEBUG   : creating lv var
+00:29:04,243 DEBUG   : new lv LVMLogicalVolumeDevice instance (0x7fb815fa5050) --
+  name = tmp-vg_zimbra-root  status = False  parents = [<storage.devices.LVMVolumeGroupDevice object at 0x2498850>]
+  kids = 0
+  id = 77
+  uuid = None  format = <storage.formats.fs.Ext3FS object at 0x7fb815f9aed0>  size = 50000
+  major = 0  minor = 0  exists = False
+  sysfs path =   partedDevice = None
+  target size = 50000  path = /dev/mapper/tmp--vg_zimbra-root
+  format args = []  originalFormat = Ext4FS instance (0x7fb815fa5150) --
+  type = ext4  name = ext4  status = False
+  device = /dev/mapper/tmp--vg_zimbra-LogVol00  uuid = None  exists = None
+  options = defaults  supported = True  formattable = True  resizable = None
+  mountpoint = None  mountopts = None
+  label = None  size = 0  targetSize = 0
+  target = None  dmUuid = None  VG device = <storage.devices.LVMVolumeGroupDevice object at 0x2498850>  percent = 0
+  segment type = linear copies = 1  snapshot total =  0MB
+  VG space used = 50000MB
+00:29:04,243 DEBUG   : creating lv root
+00:29:04,248 DEBUG   : refresh: justRedraw=True
+00:29:05,586 INFO    : leaving (1) step partition
+00:29:05,587 INFO    : moving (1) to step storagedone
+00:29:05,587 DEBUG   : storagedone is a direct step
+00:29:06,993 INFO    : leaving (1) step storagedone
+00:29:06,993 INFO    : moving (1) to step enablefilesystems
+00:29:06,993 DEBUG   : enablefilesystems is a direct step
+00:29:09,560 DEBUG   : notifying kernel of 'change' event on device /sys/class/block/sda1
+00:29:10,472 DEBUG   : notifying kernel of 'change' event on device /sys/class/block/sda2
+00:29:32,671 DEBUG   : notifying kernel of 'change' event on device /sys/class/block/dm-0
+00:29:52,450 DEBUG   : notifying kernel of 'change' event on device /sys/class/block/dm-2
+00:30:11,872 DEBUG   : notifying kernel of 'change' event on device /sys/class/block/dm-3
+00:30:12,711 INFO    : failed to set SELinux context for /mnt/sysimage: [Errno 95] Operation not supported
+00:30:12,711 DEBUG   : isys.py:mount()- going to mount /dev/mapper/vg_zimbra-root on /mnt/sysimage as ext3 with options defaults
+00:30:12,814 DEBUG   : isys.py:mount()- going to mount /dev/sda1 on /mnt/sysimage/boot as ext3 with options defaults
+00:30:12,905 DEBUG   : isys.py:mount()- going to mount //dev on /mnt/sysimage/dev as bind with options defaults,bind
+00:30:12,911 DEBUG   : isys.py:mount()- going to mount devpts on /mnt/sysimage/dev/pts as devpts with options gid=5,mode=620
+00:30:12,915 DEBUG   : isys.py:mount()- going to mount tmpfs on /mnt/sysimage/dev/shm as tmpfs with options defaults
+00:30:12,950 DEBUG   : isys.py:mount()- going to mount /dev/mapper/vg_zimbra-opt on /mnt/sysimage/opt as ext3 with options defaults
+00:30:13,046 INFO    : failed to get default SELinux context for /proc: [Errno 2] No such file or directory
+00:30:13,046 DEBUG   : isys.py:mount()- going to mount proc on /mnt/sysimage/proc as proc with options defaults
+00:30:13,049 INFO    : failed to get default SELinux context for /proc: [Errno 2] No such file or directory
+00:30:13,069 DEBUG   : isys.py:mount()- going to mount sysfs on /mnt/sysimage/sys as sysfs with options defaults
+00:30:13,093 DEBUG   : isys.py:mount()- going to mount /dev/mapper/vg_zimbra-var on /mnt/sysimage/var as ext3 with options defaults
+00:30:13,156 INFO    : leaving (1) step enablefilesystems
+00:30:13,157 INFO    : moving (1) to step bootloadersetup
+00:30:13,157 DEBUG   : bootloadersetup is a direct step
+00:30:13,158 WARNING : '/usr/sbin/dmidecode' specified as full path
+00:30:13,162 INFO    : leaving (1) step bootloadersetup
+00:30:13,163 INFO    : moving (1) to step bootloader
+00:30:16,096 INFO    : leaving (1) step bootloader
+00:30:16,096 INFO    : moving (1) to step reposetup
+00:30:16,096 DEBUG   : reposetup is a direct step
+00:30:16,098 DEBUG   : isys.py:mount()- going to mount 10.33.130.1:/var/ftp/pub/os/CentOS/x64 on /mnt/source as nfs with options defaults
+00:30:16,199 ERROR   : Error downloading treeinfo file: [Errno 14] Could not open/read file:///mnt/source/treeinfo
+00:30:16,427 ERROR   : Error downloading treeinfo file: [Errno 14] Could not open/read file:///mnt/source/treeinfo
+00:30:16,453 DEBUG   : Grabbing  file:///mnt/source/repodata/repomd.xml
+00:30:16,483 DEBUG   : Grabbing  file:///mnt/source/repodata/0dafccfdbf892f02acca8267ade4bdcee7280a682e65dc7e29145f3341fd7a8c-primary.sqlite.bz2
+00:30:17,487 DEBUG   : Grabbing  file:///mnt/source/repodata/b4e0b9342ef85d3059ff095fa7f140f654c2cb492837de689a58c581207d9632-c6-x86_64-comps.xml
+00:30:18,201 INFO    : leaving (1) step reposetup
+00:30:18,201 INFO    : moving (1) to step tasksel
+00:30:26,094 INFO    : leaving (1) step tasksel
+00:30:26,094 INFO    : moving (1) to step basepkgsel
+00:30:26,094 DEBUG   : basepkgsel is a direct step
+00:30:26,388 INFO    : leaving (1) step basepkgsel
+00:30:26,388 INFO    : moving (1) to step group-selection
+00:32:47,974 INFO    : leaving (1) step group-selection
+00:32:47,974 INFO    : moving (1) to step postselection
+00:32:47,975 DEBUG   : postselection is a direct step
+00:32:47,983 INFO    : selected kernel package for kernel
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/xfs/xfs.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/exportfs/exportfs.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fat/vfat.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fat/fat.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext3/ext3.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/jbd/jbd.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext2/ext2.ko.gz
+00:32:48,734 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext4/ext4.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/jbd2/jbd2.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/mbcache.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/fcoe/fcoe.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/fcoe/libfcoe.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libfc/libfc.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_transport_fc.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_tgt.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/xts.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/lrw.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/gf128mul.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/sha256_generic.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/cbc.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-raid.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-crypt.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-round-robin.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-multipath.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-snapshot.ko.gz
+00:32:48,735 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-mirror.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-region-hash.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-log.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-zero.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-mod.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/linear.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid10.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid456.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_raid6_recov.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_pq.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/lib/raid6/raid6_pq.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_xor.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/xor.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_memcpy.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_tx.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid1.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid0.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/nfs/nfs.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/lockd/lockd.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fscache/fscache.ko.gz
+00:32:48,736 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/nfs_common/nfs_acl.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/sunrpc/sunrpc.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/8021q/8021q.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/802/garp.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/802/stp.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/llc/llc.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/hw/mlx4/mlx4_ib.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/mlx4/mlx4_en.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/mlx4/mlx4_core.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/ulp/ipoib/ib_ipoib.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_cm.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_sa.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_mad.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_core.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/net/ipv6/ipv6.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sg.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sd_mod.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/lib/crc-t10dif.ko.gz
+00:32:48,737 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sr_mod.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/cdrom/cdrom.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/ata/ahci.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/i915/i915.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/e1000e/e1000e.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/ptp/ptp.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/pps/pps_core.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/nouveau/nouveau.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/ttm/ttm.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/drm_kms_helper.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/drm.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/i2c/algos/i2c-algo-bit.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/i2c/i2c-core.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/platform/x86/mxm-wmi.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/acpi/video.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/video/output.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/platform/x86/wmi.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/firmware/iscsi_ibft.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/iscsi_boot_sysfs.ko.gz
+00:32:48,738 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/input/misc/pcspkr.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/firmware/edd.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/iscsi_tcp.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libiscsi_tcp.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libiscsi.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_transport_iscsi.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/squashfs/squashfs.ko.gz
+00:32:48,739 DEBUG   : Checking for DUD module /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/cramfs/cramfs.ko.gz
+00:32:53,280 INFO    : leaving (1) step postselection
+00:32:53,280 INFO    : moving (1) to step install
+00:32:53,297 INFO    : leaving (1) step install
+00:32:53,297 INFO    : moving (1) to step preinstallconfig
+00:32:53,297 DEBUG   : preinstallconfig is a direct step
+00:32:53,387 DEBUG   : isys.py:mount()- going to mount /selinux on /mnt/sysimage/selinux as selinuxfs with options defaults
+00:32:53,391 DEBUG   : isys.py:mount()- going to mount /proc/bus/usb on /mnt/sysimage/proc/bus/usb as usbfs with options defaults
+00:32:53,397 INFO    : copy_to_sysimage: source '/etc/multipath/wwids' does not exist.
+00:32:53,398 INFO    : copy_to_sysimage: source '/etc/multipath/bindings' does not exist.
+00:32:53,399 INFO    : Disabling ipv6 on target system
+00:32:53,402 INFO    : copy_to_sysimage: source '/etc/multipath/wwids' does not exist.
+00:32:53,402 INFO    : copy_to_sysimage: source '/etc/multipath/bindings' does not exist.
+00:32:53,404 INFO    : leaving (1) step preinstallconfig
+00:32:53,404 INFO    : moving (1) to step installpackages
+00:32:53,404 DEBUG   : installpackages is a direct step
+00:32:53,404 INFO    : Preparing to install packages
+00:32:53,407 DEBUG   : isys.py:umount()- going to unmount /mnt/stage2, removeDir = True
+00:33:36,587 WARNING : /usr/lib/anaconda/gui.py:483: GtkWarning: IA__gtk_progress_set_percentage: assertion `percentage >= 0 && percentage <= 1.0' failed
+  self.progress.set_fraction (newval)
+
+00:35:44,035 WARNING : /usr/lib/anaconda/iw/progress_gui.py:67: GtkWarning: Failed to set text from markup due to error parsing markup: Error on line 2 char 32: Element 'markup' was closed, but the currently open element is 'NAME'
+  self.infolabel.set_markup(txt)
+
+00:48:45,179 INFO    : leaving (1) step installpackages
+00:48:45,180 INFO    : moving (1) to step postinstallconfig
+00:48:45,181 DEBUG   : postinstallconfig is a direct step
+00:48:45,188 DEBUG   : Removing cachedir: /mnt/sysimage/var/cache/yum/anaconda-CentOS-201311291202.x86_64
+00:48:45,191 INFO    : leaving (1) step postinstallconfig
+00:48:45,191 INFO    : moving (1) to step writeconfig
+00:48:45,192 DEBUG   : writeconfig is a direct step
+00:48:45,192 INFO    : Writing main configuration
+00:48:45,195 WARNING : '/usr/sbin/authconfig' specified as full path
+00:48:45,720 WARNING : Not disabling ipv6, /etc/modprobe.d/ipv6.conf exists
+00:48:45,722 WARNING : '/usr/sbin/lokkit' specified as full path
+00:48:45,760 WARNING : '/usr/sbin/lokkit' specified as full path
+00:48:45,806 INFO    : removing libuser.conf at /tmp/libuser.J0QyMI
+00:48:45,807 INFO    : created new libuser.conf at /tmp/libuser.J0QyMI with instPath="/mnt/sysimage"
+00:48:46,128 INFO    : leaving (1) step writeconfig
+00:48:46,129 INFO    : moving (1) to step firstboot
+00:48:46,130 DEBUG   : firstboot is a direct step
+00:48:46,130 INFO    : leaving (1) step firstboot
+00:48:46,131 INFO    : moving (1) to step instbootloader
+00:48:46,131 DEBUG   : instbootloader is a direct step
+00:48:47,433 WARNING : '/sbin/grub-install' specified as full path
+00:48:47,855 WARNING : '/sbin/grub' specified as full path
+00:48:48,366 INFO    : leaving (1) step instbootloader
+00:48:48,367 INFO    : moving (1) to step reipl
+00:48:48,368 DEBUG   : reipl is a direct step
+00:48:48,368 INFO    : leaving (1) step reipl
+00:48:48,369 INFO    : moving (1) to step writeksconfig
+00:48:48,370 DEBUG   : writeksconfig is a direct step
+00:48:48,370 INFO    : Writing autokickstart file
+00:48:48,651 INFO    : leaving (1) step writeksconfig
+00:48:48,653 INFO    : moving (1) to step setfilecon
+00:48:48,653 DEBUG   : setfilecon is a direct step
+00:48:48,654 INFO    : setting SELinux contexts for anaconda created files
+00:48:53,233 INFO    : leaving (1) step setfilecon
+00:48:53,233 INFO    : moving (1) to step copylogs
+00:48:53,233 DEBUG   : copylogs is a direct step
+00:48:53,233 INFO    : Copying anaconda logs

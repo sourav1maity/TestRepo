@@ -1,0 +1,64 @@
+%@		Welcome to [0;36mCentOS[0;39m 
+Starting udev: %G[60G[[0;32m  OK  [0;39m]
+Setting hostname SRV03-BF65.webskitters.com:  [60G[[0;32m  OK  [0;39m]
+Setting up Logical Volume Management:   6 logical volume(s) in volume group "vg_zimbra" now active
+[60G[[0;32m  OK  [0;39m]
+Checking filesystems
+/dev/mapper/vg_zimbra-root: clean, 515159/3203072 files, 7064857/12800000 blocks
+/dev/sda1: clean, 39/51200 files, 42472/204800 blocks
+/dev/mapper/vg_zimbra-opt: clean, 53767/3203072 files, 1140131/12800000 blocks
+/dev/mapper/vg_zimbra-var: clean, 2394411/9756672 files, 33033630/39014400 blocks
+[60G[[0;32m  OK  [0;39m]
+Remounting root filesystem in read-write mode:  [60G[[0;32m  OK  [0;39m]
+Mounting local filesystems:  [60G[[0;32m  OK  [0;39m]
+Enabling local filesystem quotas:  [60G[[0;32m  OK  [0;39m]
+Enabling /etc/fstab swaps:  [60G[[0;32m  OK  [0;39m]
+Entering non-interactive startup
+Calling the system activity data collector (sadc)... 
+Starting monitoring for VG vg_zimbra:   6 logical volume(s) in volume group "vg_zimbra" monitored
+[60G[[0;32m  OK  [0;39m]
+Bringing up loopback interface:  [60G[[0;32m  OK  [0;39m]
+Bringing up interface eth0:  Determining if ip address 192.168.2.3 is already in use for device eth0...
+[60G[[0;32m  OK  [0;39m]
+Starting auditd: [60G[[0;32m  OK  [0;39m]
+Starting portreserve: [60G[[0;32m  OK  [0;39m]
+Starting system logger: [60G[[0;32m  OK  [0;39m]
+Enabling ondemand cpu frequency scaling: [60G[[0;32m  OK  [0;39m]
+Starting irqbalance: [60G[[0;32m  OK  [0;39m]
+Starting rpcbind: [60G[[0;32m  OK  [0;39m]
+Starting system message bus: [60G[[0;32m  OK  [0;39m]
+Setting network parameters... [60G[[0;32m  OK  [0;39m]
+Starting NetworkManager daemon: [60G[[0;32m  OK  [0;39m]
+Starting NFS statd: [60G[[0;32m  OK  [0;39m]
+Starting cups: [60G[[0;32m  OK  [0;39m]
+Mounting filesystems:  [60G[[0;32m  OK  [0;39m]
+Starting acpi daemon: [60G[[0;32m  OK  [0;39m]
+Starting HAL daemon: [60G[[0;32m  OK  [0;39m]
+Retrigger failed udev events[60G[[0;32m  OK  [0;39m]
+Loading autofs4: [60G[[0;32m  OK  [0;39m]
+Starting automount: [60G[[0;32m  OK  [0;39m]
+Starting NFS services:  [60G[[0;32m  OK  [0;39m]
+Starting NFS quotas: [60G[[0;32m  OK  [0;39m]
+Starting NFS mountd: rpc.mountd: svc_tli_create: could not open connection for udp6
+rpc.mountd: svc_tli_create: could not open connection for tcp6
+rpc.mountd: svc_tli_create: could not open connection for udp6
+rpc.mountd: svc_tli_create: could not open connection for tcp6
+rpc.mountd: svc_tli_create: could not open connection for udp6
+rpc.mountd: svc_tli_create: could not open connection for tcp6
+[60G[[0;32m  OK  [0;39m]
+Starting NFS daemon: rpc.nfsd: address family inet6 not supported by protocol TCP
+[60G[[0;32m  OK  [0;39m]
+Starting RPC idmapd: [60G[[0;32m  OK  [0;39m]
+Enabling Bluetooth devices:
+Starting sshd: [60G[[0;32m  OK  [0;39m]
+Starting uuidd: [60G[[0;32m  OK  [0;39m]
+Starting mysqld:  [60G[[0;32m  OK  [0;39m]
+Starting sendmail: [60G[[0;32m  OK  [0;39m]
+Starting sm-client: [60G[[0;32m  OK  [0;39m]
+Starting abrt daemon: [60G[[0;32m  OK  [0;39m]
+Starting console mouse services: [60G[[0;32m  OK  [0;39m]
+Starting httpd: [60G[[0;32m  OK  [0;39m]
+Starting crond: [60G[[0;32m  OK  [0;39m]
+Starting SMB services: [60G[[0;32m  OK  [0;39m]
+Starting atd: [60G[[0;32m  OK  [0;39m]
+Starting certmonger: [60G[[0;32m  OK  [0;39m]

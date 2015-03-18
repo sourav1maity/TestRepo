@@ -1,0 +1,634 @@
+Running... /bin/mount -n -t nfs -o ro,nolock 10.33.130.1:/var/ftp/pub/os/CentOS/x64/images /mnt/stage2
+Running... /bin/mount -n -t auto -o ro,loop=/dev/loop0 /tmp/install.img /mnt/runtime
+Running... /bin/mount -n -t nfs -o ro,nolock 10.33.130.1:/var/ftp/pub/os/CentOS/x64/RHupdates /tmp/update-disk
+Running... /bin/mount -n -t nfs -o ro,nolock 10.33.130.1:/var/ftp/pub/os/CentOS/x64/images /tmp/disk-image
+18:55:52,787 INFO    : Running... ['udevadm', 'trigger', '--action=add', '--subsystem-match=net']
+18:55:52,799 INFO    : Running... ['udevadm', 'trigger', '--action=add', '--subsystem-match=block']
+18:55:52,812 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:55:53,390 INFO    : Running... ['udevadm', 'trigger', '--action=add', '--subsystem-match=net']
+18:55:53,401 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:55:53,905 INFO    : Running... ['metacity', '--display', ':1', '--sm-disable']
+18:55:54,026 ERROR   : Window manager warning: 0 stored in GConf key /desktop/gnome/peripherals/mouse/cursor_size is out of range 1 to 128
+18:55:54,512 INFO    : Running... ['xrandr', '-q']
+18:55:54,530 INFO    : Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192
+18:55:54,530 INFO    : VGA2 connected 1366x768+0+0 (normal left inverted right x axis y axis) 413mm x 234mm
+18:55:54,530 INFO    :    1366x768       59.8*+
+18:55:54,530 INFO    :    1360x768       60.0  
+18:55:54,530 INFO    :    1024x768       75.1     72.0     70.1     60.0  
+18:55:54,530 INFO    :    832x624        74.6  
+18:55:54,530 INFO    :    800x600        72.2     75.0     60.3     56.2  
+18:55:54,530 INFO    :    640x480        72.8     75.0     66.7     60.0  
+18:55:54,530 INFO    :    720x400        70.1  
+18:55:55,159 ERROR   : Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x80000d (CentOS Ins)
+18:55:55,159 ERROR   : Window manager warning: meta_window_activate called by a pager with a 0 timestamp; the pager needs to be fixed.
+18:55:59,006 INFO    : Running... ['udevadm', 'trigger', '--action=change', '--subsystem-match=block']
+18:55:59,041 INFO    : Running... ['modprobe', 'fcoe']
+18:55:59,072 INFO    : Running... ['/usr/libexec/fcoe/fcoe_edd.sh', '-i']
+18:55:59,078 INFO    : No FCoE boot disk information is found in EDD!
+18:55:59,079 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+18:55:59,084 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+18:55:59,087 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:55:59,555 INFO    : Running... ['multipath', '-d']
+18:55:59,561 INFO    : Running... ['multipath', '-ll']
+18:55:59,627 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+18:55:59,632 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+18:55:59,635 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,131 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+18:56:00,135 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+18:56:00,139 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,305 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda4']
+18:56:00,309 ERROR   : Device sda4 not found
+18:56:00,309 ERROR   : Command failed
+18:56:00,309 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,323 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+18:56:00,326 ERROR   : Device sda not found
+18:56:00,326 ERROR   : Command failed
+18:56:00,328 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,341 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sr0']
+18:56:00,344 ERROR   : Device sr0 not found
+18:56:00,345 ERROR   : Command failed
+18:56:00,346 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,359 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+18:56:00,362 ERROR   : Device sda2 not found
+18:56:00,363 ERROR   : Command failed
+18:56:00,363 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,377 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+18:56:00,380 ERROR   : Device sda not found
+18:56:00,380 ERROR   : Command failed
+18:56:00,382 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,395 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda3']
+18:56:00,398 ERROR   : Device sda3 not found
+18:56:00,398 ERROR   : Command failed
+18:56:00,398 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,412 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+18:56:00,416 ERROR   : Device sda not found
+18:56:00,416 ERROR   : Command failed
+18:56:00,417 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,431 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda1']
+18:56:00,434 ERROR   : Device sda1 not found
+18:56:00,434 ERROR   : Command failed
+18:56:00,435 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:00,448 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+18:56:00,451 ERROR   : Device sda not found
+18:56:00,451 ERROR   : Command failed
+18:56:00,453 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+18:56:25,997 INFO    : Running... ['hostname', '-v', 'zimbra.webskitters.com']
+18:56:26,001 ERROR   : Setting hostname to `zimbra.webskitters.com'
+00:26:43,094 INFO    : Running... ['/usr/sbin/hwclock', '--hctosys', '-u']
+00:26:46,025 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:46,030 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:46,034 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,051 INFO    : Running... ['multipath', '-d']
+00:26:46,055 INFO    : Running... ['multipath', '-ll']
+00:26:46,070 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:46,075 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:46,078 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,230 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:46,235 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:46,239 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,255 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda4']
+00:26:46,258 ERROR   : Device sda4 not found
+00:26:46,258 ERROR   : Command failed
+00:26:46,259 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,273 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:46,276 ERROR   : Device sda not found
+00:26:46,276 ERROR   : Command failed
+00:26:46,277 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,291 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sr0']
+00:26:46,294 ERROR   : Device sr0 not found
+00:26:46,294 ERROR   : Command failed
+00:26:46,296 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,309 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+00:26:46,312 ERROR   : Device sda2 not found
+00:26:46,312 ERROR   : Command failed
+00:26:46,313 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,326 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:46,330 ERROR   : Device sda not found
+00:26:46,330 ERROR   : Command failed
+00:26:46,331 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,345 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda3']
+00:26:46,349 ERROR   : Device sda3 not found
+00:26:46,349 ERROR   : Command failed
+00:26:46,349 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,363 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:46,366 ERROR   : Device sda not found
+00:26:46,366 ERROR   : Command failed
+00:26:46,368 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,382 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda1']
+00:26:46,385 ERROR   : Device sda1 not found
+00:26:46,385 ERROR   : Command failed
+00:26:46,386 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:46,399 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:46,403 ERROR   : Device sda not found
+00:26:46,403 ERROR   : Command failed
+00:26:46,404 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,384 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:51,390 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:51,393 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,410 INFO    : Running... ['multipath', '-d']
+00:26:51,415 INFO    : Running... ['multipath', '-ll']
+00:26:51,426 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:51,431 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:51,435 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,544 INFO    : Running... ['modprobe', 'scsi_wait_scan']
+00:26:51,549 INFO    : Running... ['rmmod', 'scsi_wait_scan']
+00:26:51,553 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,569 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda4']
+00:26:51,572 ERROR   : Device sda4 not found
+00:26:51,572 ERROR   : Command failed
+00:26:51,573 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,587 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:51,590 ERROR   : Device sda not found
+00:26:51,590 ERROR   : Command failed
+00:26:51,592 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,606 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sr0']
+00:26:51,609 ERROR   : Device sr0 not found
+00:26:51,609 ERROR   : Command failed
+00:26:51,611 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,624 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+00:26:51,628 ERROR   : Device sda2 not found
+00:26:51,628 ERROR   : Command failed
+00:26:51,628 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,642 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:51,646 ERROR   : Device sda not found
+00:26:51,646 ERROR   : Command failed
+00:26:51,647 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,661 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda3']
+00:26:51,664 ERROR   : Device sda3 not found
+00:26:51,664 ERROR   : Command failed
+00:26:51,665 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,679 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:51,682 ERROR   : Device sda not found
+00:26:51,682 ERROR   : Command failed
+00:26:51,684 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,697 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda1']
+00:26:51,701 ERROR   : Device sda1 not found
+00:26:51,701 ERROR   : Command failed
+00:26:51,701 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:51,715 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:26:51,719 ERROR   : Device sda not found
+00:26:51,719 ERROR   : Command failed
+00:26:51,720 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:57,941 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda4']
+00:26:57,945 ERROR   : Device sda4 not found
+00:26:57,945 ERROR   : Command failed
+00:26:57,946 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:57,964 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda3']
+00:26:57,967 ERROR   : Device sda3 not found
+00:26:57,967 ERROR   : Command failed
+00:26:57,969 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:57,986 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+00:26:57,989 ERROR   : Device sda2 not found
+00:26:57,990 ERROR   : Command failed
+00:26:57,991 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:26:58,008 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda1']
+00:26:58,012 ERROR   : Device sda1 not found
+00:26:58,012 ERROR   : Command failed
+00:26:58,013 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:27:13,339 INFO    : Running... ['modprobe', 'ext4']
+00:27:13,378 INFO    : Running... ['modprobe', 'ext2']
+00:27:13,389 INFO    : Running... ['modprobe', 'ext3']
+00:27:13,433 INFO    : Running... ['modprobe', 'vfat']
+00:27:13,446 INFO    : Running... ['modprobe', 'xfs']
+00:29:06,866 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sr0']
+00:29:06,870 ERROR   : Device sr0 not found
+00:29:06,870 ERROR   : Command failed
+00:29:06,871 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,886 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:06,890 ERROR   : Device sda not found
+00:29:06,890 ERROR   : Command failed
+00:29:06,892 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,908 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:06,912 ERROR   : Device sda not found
+00:29:06,912 ERROR   : Command failed
+00:29:06,914 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,931 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:06,934 ERROR   : Device sda not found
+00:29:06,934 ERROR   : Command failed
+00:29:06,936 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,953 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:06,956 ERROR   : Device sda not found
+00:29:06,956 ERROR   : Command failed
+00:29:06,958 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,975 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:06,979 ERROR   : Device sda not found
+00:29:06,979 ERROR   : Command failed
+00:29:06,981 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:06,993 INFO    : Running... ['swapoff', '-a']
+00:29:06,996 ERROR   : swapoff: /etc/fstab: open failed: No such file or directory
+00:29:06,999 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sr0']
+00:29:07,002 ERROR   : Device sr0 not found
+00:29:07,002 ERROR   : Command failed
+00:29:07,004 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,019 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:07,022 ERROR   : Device sda not found
+00:29:07,022 ERROR   : Command failed
+00:29:07,024 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,041 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:07,044 ERROR   : Device sda not found
+00:29:07,044 ERROR   : Command failed
+00:29:07,046 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,063 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:07,066 ERROR   : Device sda not found
+00:29:07,066 ERROR   : Command failed
+00:29:07,068 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,085 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:07,088 ERROR   : Device sda not found
+00:29:07,089 ERROR   : Command failed
+00:29:07,090 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,107 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda']
+00:29:07,110 ERROR   : Device sda not found
+00:29:07,111 ERROR   : Command failed
+00:29:07,112 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,162 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,177 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda4']
+00:29:07,180 ERROR   : Device sda4 not found
+00:29:07,180 ERROR   : Command failed
+00:29:07,182 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,194 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,376 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,690 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,718 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,783 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda3']
+00:29:07,787 ERROR   : Device sda3 not found
+00:29:07,787 ERROR   : Command failed
+00:29:07,789 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,801 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:07,909 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,023 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,058 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,073 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+00:29:08,077 ERROR   : Device sda2 not found
+00:29:08,077 ERROR   : Command failed
+00:29:08,079 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,091 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,151 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,214 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,243 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,259 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda1']
+00:29:08,263 ERROR   : Device sda1 not found
+00:29:08,263 ERROR   : Command failed
+00:29:08,264 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,277 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,340 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,403 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,440 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,522 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:08,594 INFO    : Running... ['mke2fs', '-t', 'ext3', '/dev/sda1']
+00:29:08,599 INFO    : Filesystem label=
+00:29:08,599 INFO    : OS type: Linux
+00:29:08,600 INFO    : Block size=1024 (log=0)
+00:29:08,600 INFO    : Fragment size=1024 (log=0)
+00:29:08,600 INFO    : Stride=4 blocks, Stripe width=0 blocks
+00:29:08,600 INFO    : 51200 inodes, 204800 blocks
+00:29:08,601 INFO    : 10240 blocks (5.00%) reserved for the super user
+00:29:08,601 INFO    : First data block=1
+00:29:08,601 INFO    : Maximum filesystem blocks=67371008
+00:29:08,601 INFO    : 25 block groups
+00:29:08,602 INFO    : 8192 blocks per group, 8192 fragments per group
+00:29:08,602 INFO    : 2048 inodes per group
+00:29:08,602 INFO    : Superblock backups stored on blocks: 
+00:29:08,603 INFO    : 	8193, 24577, 40961, 57345, 73729
+00:29:08,603 INFO    : 
+00:29:08,853 INFO    : Writing inode tables:  0/25 1/25 2/25 3/25 4/25 5/25 6/25 7/25 8/25 9/2510/2511/2512/2513/2514/2515/2516/2517/2518/2519/2520/2521/2522/2523/2524/25done                            
+00:29:08,928 INFO    : Creating journal (4096 blocks): done
+00:29:09,559 INFO    : Writing superblocks and filesystem accounting information: d
+00:29:09,559 ERROR   : mke2fs 1.41.12 (17-May-2010)
+00:29:09,561 INFO    : Running... ['tune2fs', '-c0', '-i0', '-ouser_xattr,acl', '/dev/sda1']
+00:29:09,665 INFO    : tune2fs 1.41.12 (17-May-2010)
+00:29:09,665 INFO    : Setting maximal mount count to -1
+00:29:09,665 INFO    : Setting interval between checks to 0 seconds
+00:29:09,666 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:09,681 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:09,752 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:10,084 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:10,277 INFO    : Running... ['lvm', 'pvcreate', '--dataalignment', '1024k', '/dev/sda2']
+00:29:10,469 INFO    :   Physical volume "/dev/sda2" successfully created
+00:29:10,472 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:10,538 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:10,565 INFO    : Running... ['lvm', 'vgcreate', '-s', '4m', 'vg_zimbra', '/dev/sda2']
+00:29:10,688 INFO    :   Volume group "vg_zimbra" successfully created
+00:29:10,694 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:10,768 INFO    : Running... ['lvm', 'lvcreate', '-L', '50000m', '-n', 'opt', 'vg_zimbra']
+00:29:10,877 INFO    :   Logical volume "opt" created
+00:29:10,883 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:11,007 INFO    : Running... ['mke2fs', '-t', 'ext3', '/dev/mapper/vg_zimbra-opt']
+00:29:11,013 INFO    : Filesystem label=
+00:29:11,013 INFO    : OS type: Linux
+00:29:11,013 INFO    : Block size=4096 (log=2)
+00:29:11,013 INFO    : Fragment size=4096 (log=2)
+00:29:11,014 INFO    : Stride=1 blocks, Stripe width=0 blocks
+00:29:11,014 INFO    : 3203072 inodes, 12800000 blocks
+00:29:11,014 INFO    : 640000 blocks (5.00%) reserved for the super user
+00:29:11,015 INFO    : First data block=0
+00:29:11,015 INFO    : Maximum filesystem blocks=4294967296
+00:29:11,015 INFO    : 391 block groups
+00:29:11,015 INFO    : 32768 blocks per group, 32768 fragments per group
+00:29:11,016 INFO    : 8192 inodes per group
+00:29:11,016 INFO    : Superblock backups stored on blocks: 
+00:29:11,016 INFO    : 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+00:29:11,017 INFO    : 	4096000, 7962624, 11239424
+00:29:11,017 INFO    : 
+00:29:11,242 INFO    : Writing inode tables:   0/391  1/391  2/391  3/391  4/391  5/391  6/391  7/391  8/391  9/391 10/391 11/391 12/391 13/391 14/391 15/391 16/391 17/391 18/391 19/391 20/391 21/391 22/391 23/391 24/391 25/391 26/391 27/391 28/391 29/391 30/391 31/391 32/391 33/391 34/391 35/391 36/391 37/391 38/391 39/391 40/391 41/391 42/391 43/391 44/391 45/391 46/391 47/391 48/391 49/391 50/391 51/391 52/391 53/391 54/391 55/391 56/391 57/391 58/391 59/391 60/391 61/391 62/391 63/391 64/391 65/391 66/391 67/391 68/391 69/391 70/391 71/391 72/391 73/391 74/391 75/391 76/391 77/391 78/391 79/391 80/391 81/391 82/391 83/391 84/391 85/391 86/391 87/391 88/391 89/391 90/391 91/391 92/391 93/391 94/391 95/391 96/391 97/391 98/391 99/391100/391101/391102/391103/391104/391105/391106/391107/391108/391109/391110/391111/391112/391113/391114/391115/391116/391117/391118/391119/391120/391121/391122/391123/391124/391125/391126/391127/391128/391129/391130/391131/391132/391133/391134/391135/391136/391137/391138/391139/391140/391141/391142/391143/391144/391145/391146/391147/391148/391149/391150/391151/391152/391153/391154/391155/391156/391157/391158/391159/391160/391161/391162/391163/391164/391165/391166/391167/391168/391169/391170/391171/391172/391173/391174/391175/391176/391177/391178/391179/391180/391181/391182/391183/391184/391185/391186/391187/391188/391189/391190/391191/391192/391193/391194/391195/391196/391197/391198/391199/391200/391201/391202/391203/391204/391205/391206/391207/391208/391209/391210/391211/391212/391213/391214/391215/391216/391217/391218/391219/391220/391221/391222/391223/391224/391225/391226/391227/391228/391229/391230/391231/391232/391233/391234/391235/391236/391237/391238/391239/391240/391241/391242/391243/391244/391245/391246/391247/391248/391249/391250/391251/391252/391253/391254/391255/391256/391257/391258/391259/391260/391261/391262/391263/391264/391265/391266/391267/391268/391269/391270/391271/391272/391273/391274/391275/391276/391277/391278/391279/391280/391281/391282/391283/391284/391285/391286/391287/391288/391289/391290/391291/391292/391293/391294/391295/391296/391297/391298/391299/391300/391301/391302/391303/391304/391305/391306/391307/391308/391309/391310/391311/391312/391313/391314/391315/391316/391317/391318/391319/391320/391321/391322/391323/391324/391325/391326/391327/391328/391329/391330/391331/391332/391333/391334/391335/391336/391337/391338/391339/391340/391341/391342/391343/391344/391345/391346/391347/391348/391349/391350/391351/391352/391353/391354/391355/391356/391357/391358/391359/391360/391361/391362/391363/391364/391365/391366/391367/391368/391369/391370/391371/391372/391373/391374/391375/391376/391377/391378/391379/391380/391381/391382/391383/391384/391385/391386/391387/391388/391389/391390/391done                            
+00:29:11,287 INFO    : Creating journal (32768 blocks): done
+00:29:32,608 INFO    : Writing superblocks and filesystem accounting information: done
+00:29:32,609 INFO    : 
+00:29:32,609 INFO    : This filesystem will be automatically checked every 37 mounts or
+00:29:32,610 INFO    : 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+00:29:32,669 ERROR   : mke2fs 1.41.12 (17-May-2010)
+00:29:32,715 INFO    : Running... ['tune2fs', '-c0', '-i0', '-ouser_xattr,acl', '/dev/mapper/vg_zimbra-opt']
+00:29:32,960 INFO    : tune2fs 1.41.12 (17-May-2010)
+00:29:32,960 INFO    : Setting maximal mount count to -1
+00:29:32,960 INFO    : Setting interval between checks to 0 seconds
+00:29:32,960 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:32,975 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:32,998 INFO    : Running... ['lvm', 'lvcreate', '-L', '8192m', '-n', 'swap', 'vg_zimbra']
+00:29:33,139 INFO    :   Logical volume "swap" created
+00:29:33,145 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:33,369 INFO    : Running... ['mkswap', '-f', '/dev/mapper/vg_zimbra-swap']
+00:29:33,382 INFO    : S
+00:29:33,383 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:33,447 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:33,470 INFO    : Running... ['lvm', 'lvcreate', '-L', '50000m', '-n', 'var', 'vg_zimbra']
+00:29:33,579 INFO    :   Logical volume "var" created
+00:29:33,585 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:33,708 INFO    : Running... ['mke2fs', '-t', 'ext3', '/dev/mapper/vg_zimbra-var']
+00:29:33,714 INFO    : Filesystem label=
+00:29:33,714 INFO    : OS type: Linux
+00:29:33,714 INFO    : Block size=4096 (log=2)
+00:29:33,715 INFO    : Fragment size=4096 (log=2)
+00:29:33,715 INFO    : Stride=1 blocks, Stripe width=0 blocks
+00:29:33,715 INFO    : 3203072 inodes, 12800000 blocks
+00:29:33,716 INFO    : 640000 blocks (5.00%) reserved for the super user
+00:29:33,716 INFO    : First data block=0
+00:29:33,716 INFO    : Maximum filesystem blocks=4294967296
+00:29:33,716 INFO    : 391 block groups
+00:29:33,717 INFO    : 32768 blocks per group, 32768 fragments per group
+00:29:33,717 INFO    : 8192 inodes per group
+00:29:33,717 INFO    : Superblock backups stored on blocks: 
+00:29:33,718 INFO    : 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+00:29:33,718 INFO    : 	4096000, 7962624, 11239424
+00:29:33,718 INFO    : 
+00:29:33,944 INFO    : Writing inode tables:   0/391  1/391  2/391  3/391  4/391  5/391  6/391  7/391  8/391  9/391 10/391 11/391 12/391 13/391 14/391 15/391 16/391 17/391 18/391 19/391 20/391 21/391 22/391 23/391 24/391 25/391 26/391 27/391 28/391 29/391 30/391 31/391 32/391 33/391 34/391 35/391 36/391 37/391 38/391 39/391 40/391 41/391 42/391 43/391 44/391 45/391 46/391 47/391 48/391 49/391 50/391 51/391 52/391 53/391 54/391 55/391 56/391 57/391 58/391 59/391 60/391 61/391 62/391 63/391 64/391 65/391 66/391 67/391 68/391 69/391 70/391 71/391 72/391 73/391 74/391 75/391 76/391 77/391 78/391 79/391 80/391 81/391 82/391 83/391 84/391 85/391 86/391 87/391 88/391 89/391 90/391 91/391 92/391 93/391 94/391 95/391 96/391 97/391 98/391 99/391100/391101/391102/391103/391104/391105/391106/391107/391108/391109/391110/391111/391112/391113/391114/391115/391116/391117/391118/391119/391120/391121/391122/391123/391124/391125/391126/391127/391128/391129/391130/391131/391132/391133/391134/391135/391136/391137/391138/391139/391140/391141/391142/391143/391144/391145/391146/391147/391148/391149/391150/391151/391152/391153/391154/391155/391156/391157/391158/391159/391160/391161/391162/391163/391164/391165/391166/391167/391168/391169/391170/391171/391172/391173/391174/391175/391176/391177/391178/391179/391180/391181/391182/391183/391184/391185/391186/391187/391188/391189/391190/391191/391192/391193/391194/391195/391196/391197/391198/391199/391200/391201/391202/391203/391204/391205/391206/391207/391208/391209/391210/391211/391212/391213/391214/391215/391216/391217/391218/391219/391220/391221/391222/391223/391224/391225/391226/391227/391228/391229/391230/391231/391232/391233/391234/391235/391236/391237/391238/391239/391240/391241/391242/391243/391244/391245/391246/391247/391248/391249/391250/391251/391252/391253/391254/391255/391256/391257/391258/391259/391260/391261/391262/391263/391264/391265/391266/391267/391268/391269/391270/391271/391272/391273/391274/391275/391276/391277/391278/391279/391280/391281/391282/391283/391284/391285/391286/391287/391288/391289/391290/391291/391292/391293/391294/391295/391296/391297/391298/391299/391300/391301/391302/391303/391304/391305/391306/391307/391308/391309/391310/391311/391312/391313/391314/391315/391316/391317/391318/391319/391320/391321/391322/391323/391324/391325/391326/391327/391328/391329/391330/391331/391332/391333/391334/391335/391336/391337/391338/391339/391340/391341/391342/391343/391344/391345/391346/391347/391348/391349/391350/391351/391352/391353/391354/391355/391356/391357/391358/391359/391360/391361/391362/391363/391364/391365/391366/391367/391368/391369/391370/391371/391372/391373/391374/391375/391376/391377/391378/391379/391380/391381/391382/391383/391384/391385/391386/391387/391388/391389/391390/391done                            
+00:29:33,991 INFO    : Creating journal (32768 blocks): done
+00:29:52,388 INFO    : Writing superblocks and filesystem accounting information: done
+00:29:52,388 INFO    : 
+00:29:52,389 INFO    : This filesystem will be automatically checked every 34 mounts or
+00:29:52,389 INFO    : 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+00:29:52,448 ERROR   : mke2fs 1.41.12 (17-May-2010)
+00:29:52,483 INFO    : Running... ['tune2fs', '-c0', '-i0', '-ouser_xattr,acl', '/dev/mapper/vg_zimbra-var']
+00:29:52,738 INFO    : tune2fs 1.41.12 (17-May-2010)
+00:29:52,739 INFO    : Setting maximal mount count to -1
+00:29:52,739 INFO    : Setting interval between checks to 0 seconds
+00:29:52,739 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:52,805 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:52,828 INFO    : Running... ['lvm', 'lvcreate', '-L', '50000m', '-n', 'root', 'vg_zimbra']
+00:29:52,970 INFO    :   Logical volume "root" created
+00:29:52,977 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:29:53,251 INFO    : Running... ['mke2fs', '-t', 'ext3', '/dev/mapper/vg_zimbra-root']
+00:29:53,261 INFO    : Filesystem label=
+00:29:53,261 INFO    : OS type: Linux
+00:29:53,262 INFO    : Block size=4096 (log=2)
+00:29:53,262 INFO    : Fragment size=4096 (log=2)
+00:29:53,262 INFO    : Stride=1 blocks, Stripe width=0 blocks
+00:29:53,262 INFO    : 3203072 inodes, 12800000 blocks
+00:29:53,263 INFO    : 640000 blocks (5.00%) reserved for the super user
+00:29:53,263 INFO    : First data block=0
+00:29:53,263 INFO    : Maximum filesystem blocks=4294967296
+00:29:53,263 INFO    : 391 block groups
+00:29:53,264 INFO    : 32768 blocks per group, 32768 fragments per group
+00:29:53,264 INFO    : 8192 inodes per group
+00:29:53,264 INFO    : Superblock backups stored on blocks: 
+00:29:53,265 INFO    : 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+00:29:53,265 INFO    : 	4096000, 7962624, 11239424
+00:29:53,265 INFO    : 
+00:29:53,492 INFO    : Writing inode tables:   0/391  1/391  2/391  3/391  4/391  5/391  6/391  7/391  8/391  9/391 10/391 11/391 12/391 13/391 14/391 15/391 16/391 17/391 18/391 19/391 20/391 21/391 22/391 23/391 24/391 25/391 26/391 27/391 28/391 29/391 30/391 31/391 32/391 33/391 34/391 35/391 36/391 37/391 38/391 39/391 40/391 41/391 42/391 43/391 44/391 45/391 46/391 47/391 48/391 49/391 50/391 51/391 52/391 53/391 54/391 55/391 56/391 57/391 58/391 59/391 60/391 61/391 62/391 63/391 64/391 65/391 66/391 67/391 68/391 69/391 70/391 71/391 72/391 73/391 74/391 75/391 76/391 77/391 78/391 79/391 80/391 81/391 82/391 83/391 84/391 85/391 86/391 87/391 88/391 89/391 90/391 91/391 92/391 93/391 94/391 95/391 96/391 97/391 98/391 99/391100/391101/391102/391103/391104/391105/391106/391107/391108/391109/391110/391111/391112/391113/391114/391115/391116/391117/391118/391119/391120/391121/391122/391123/391124/391125/391126/391127/391128/391129/391130/391131/391132/391133/391134/391135/391136/391137/391138/391139/391140/391141/391142/391143/391144/391145/391146/391147/391148/391149/391150/391151/391152/391153/391154/391155/391156/391157/391158/391159/391160/391161/391162/391163/391164/391165/391166/391167/391168/391169/391170/391171/391172/391173/391174/391175/391176/391177/391178/391179/391180/391181/391182/391183/391184/391185/391186/391187/391188/391189/391190/391191/391192/391193/391194/391195/391196/391197/391198/391199/391200/391201/391202/391203/391204/391205/391206/391207/391208/391209/391210/391211/391212/391213/391214/391215/391216/391217/391218/391219/391220/391221/391222/391223/391224/391225/391226/391227/391228/391229/391230/391231/391232/391233/391234/391235/391236/391237/391238/391239/391240/391241/391242/391243/391244/391245/391246/391247/391248/391249/391250/391251/391252/391253/391254/391255/391256/391257/391258/391259/391260/391261/391262/391263/391264/391265/391266/391267/391268/391269/391270/391271/391272/391273/391274/391275/391276/391277/391278/391279/391280/391281/391282/391283/391284/391285/391286/391287/391288/391289/391290/391291/391292/391293/391294/391295/391296/391297/391298/391299/391300/391301/391302/391303/391304/391305/391306/391307/391308/391309/391310/391311/391312/391313/391314/391315/391316/391317/391318/391319/391320/391321/391322/391323/391324/391325/391326/391327/391328/391329/391330/391331/391332/391333/391334/391335/391336/391337/391338/391339/391340/391341/391342/391343/391344/391345/391346/391347/391348/391349/391350/391351/391352/391353/391354/391355/391356/391357/391358/391359/391360/391361/391362/391363/391364/391365/391366/391367/391368/391369/391370/391371/391372/391373/391374/391375/391376/391377/391378/391379/391380/391381/391382/391383/391384/391385/391386/391387/391388/391389/391390/391done                            
+00:29:53,537 INFO    : Creating journal (32768 blocks): done
+00:30:11,810 INFO    : Writing superblocks and filesystem accounting information: done
+00:30:11,810 INFO    : 
+00:30:11,811 INFO    : This filesystem will be automatically checked every 25 mounts or
+00:30:11,811 INFO    : 180 days, whichever comes first.  Use tune2fs -c or -i to override.
+00:30:11,870 ERROR   : mke2fs 1.41.12 (17-May-2010)
+00:30:11,915 INFO    : Running... ['tune2fs', '-c0', '-i0', '-ouser_xattr,acl', '/dev/mapper/vg_zimbra-root']
+00:30:12,171 INFO    : tune2fs 1.41.12 (17-May-2010)
+00:30:12,171 INFO    : Setting maximal mount count to -1
+00:30:12,171 INFO    : Setting interval between checks to 0 seconds
+00:30:12,171 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:30:12,236 INFO    : Running... ['udevadm', 'settle', '--timeout=300']
+00:30:12,672 INFO    : Running... ['swapon', '/dev/mapper/vg_zimbra-swap']
+Running... /bin/mount -n -t ext3 -o defaults /dev/mapper/vg_zimbra-root /mnt/sysimage
+Running... /bin/mount -n -t ext3 -o defaults /dev/sda1 /mnt/sysimage/boot
+Running... /bin/mount -n -t bind -o defaults,bind //dev /mnt/sysimage/dev
+Running... /bin/mount -n -t devpts -o gid=5,mode=620 /dev/devpts /mnt/sysimage/dev/pts
+Running... /bin/mount -n -t tmpfs -o defaults /dev/tmpfs /mnt/sysimage/dev/shm
+Running... /bin/mount -n -t ext3 -o defaults /dev/mapper/vg_zimbra-opt /mnt/sysimage/opt
+Running... /bin/mount -n -t proc -o defaults /dev/proc /mnt/sysimage/proc
+Running... /bin/mount -n -t sysfs -o defaults /dev/sysfs /mnt/sysimage/sys
+Running... /bin/mount -n -t ext3 -o defaults /dev/mapper/vg_zimbra-var /mnt/sysimage/var
+00:30:13,158 INFO    : Running... ['/usr/sbin/dmidecode', 'dmidecode', '-s', 'system-manufacturer']
+00:30:13,162 INFO    :                                  
+Running... /bin/mount -n -t nfs -o defaults,nolock 10.33.130.1:/var/ftp/pub/os/CentOS/x64 /mnt/source
+00:32:48,107 INFO    : Running... ['modinfo', '-F', 'filename', 'xfs']
+00:32:48,122 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/xfs/xfs.ko.gz
+00:32:48,122 INFO    : Running... ['modinfo', '-F', 'filename', 'exportfs']
+00:32:48,128 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/exportfs/exportfs.ko.gz
+00:32:48,128 INFO    : Running... ['modinfo', '-F', 'filename', 'vfat']
+00:32:48,134 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fat/vfat.ko.gz
+00:32:48,135 INFO    : Running... ['modinfo', '-F', 'filename', 'fat']
+00:32:48,141 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fat/fat.ko.gz
+00:32:48,141 INFO    : Running... ['modinfo', '-F', 'filename', 'ext3']
+00:32:48,149 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext3/ext3.ko.gz
+00:32:48,149 INFO    : Running... ['modinfo', '-F', 'filename', 'jbd']
+00:32:48,156 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/jbd/jbd.ko.gz
+00:32:48,156 INFO    : Running... ['modinfo', '-F', 'filename', 'ext2']
+00:32:48,163 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext2/ext2.ko.gz
+00:32:48,163 INFO    : Running... ['modinfo', '-F', 'filename', 'ext4']
+00:32:48,172 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/ext4/ext4.ko.gz
+00:32:48,172 INFO    : Running... ['modinfo', '-F', 'filename', 'jbd2']
+00:32:48,179 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/jbd2/jbd2.ko.gz
+00:32:48,179 INFO    : Running... ['modinfo', '-F', 'filename', 'mbcache']
+00:32:48,185 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/mbcache.ko.gz
+00:32:48,185 INFO    : Running... ['modinfo', '-F', 'filename', 'fcoe']
+00:32:48,191 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/fcoe/fcoe.ko.gz
+00:32:48,191 INFO    : Running... ['modinfo', '-F', 'filename', 'libfcoe']
+00:32:48,197 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/fcoe/libfcoe.ko.gz
+00:32:48,197 INFO    : Running... ['modinfo', '-F', 'filename', 'libfc']
+00:32:48,204 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libfc/libfc.ko.gz
+00:32:48,205 INFO    : Running... ['modinfo', '-F', 'filename', 'scsi_transport_fc']
+00:32:48,211 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_transport_fc.ko.gz
+00:32:48,211 INFO    : Running... ['modinfo', '-F', 'filename', 'scsi_tgt']
+00:32:48,217 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_tgt.ko.gz
+00:32:48,217 INFO    : Running... ['modinfo', '-F', 'filename', 'xts']
+00:32:48,223 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/xts.ko.gz
+00:32:48,223 INFO    : Running... ['modinfo', '-F', 'filename', 'lrw']
+00:32:48,229 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/lrw.ko.gz
+00:32:48,229 INFO    : Running... ['modinfo', '-F', 'filename', 'gf128mul']
+00:32:48,235 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/gf128mul.ko.gz
+00:32:48,236 INFO    : Running... ['modinfo', '-F', 'filename', 'sha256_generic']
+00:32:48,241 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/sha256_generic.ko.gz
+00:32:48,242 INFO    : Running... ['modinfo', '-F', 'filename', 'cbc']
+00:32:48,247 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/cbc.ko.gz
+00:32:48,248 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_raid']
+00:32:48,254 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-raid.ko.gz
+00:32:48,254 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_crypt']
+00:32:48,260 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-crypt.ko.gz
+00:32:48,260 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_round_robin']
+00:32:48,266 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-round-robin.ko.gz
+00:32:48,267 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_multipath']
+00:32:48,273 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-multipath.ko.gz
+00:32:48,273 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_snapshot']
+00:32:48,279 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-snapshot.ko.gz
+00:32:48,279 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_mirror']
+00:32:48,285 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-mirror.ko.gz
+00:32:48,286 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_region_hash']
+00:32:48,292 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-region-hash.ko.gz
+00:32:48,292 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_log']
+00:32:48,298 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-log.ko.gz
+00:32:48,298 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_zero']
+00:32:48,304 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-zero.ko.gz
+00:32:48,304 INFO    : Running... ['modinfo', '-F', 'filename', 'dm_mod']
+00:32:48,311 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/dm-mod.ko.gz
+00:32:48,311 INFO    : Running... ['modinfo', '-F', 'filename', 'linear']
+00:32:48,317 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/linear.ko.gz
+00:32:48,317 INFO    : Running... ['modinfo', '-F', 'filename', 'raid10']
+00:32:48,324 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid10.ko.gz
+00:32:48,324 INFO    : Running... ['modinfo', '-F', 'filename', 'raid456']
+00:32:48,331 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid456.ko.gz
+00:32:48,331 INFO    : Running... ['modinfo', '-F', 'filename', 'async_raid6_recov']
+00:32:48,337 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_raid6_recov.ko.gz
+00:32:48,337 INFO    : Running... ['modinfo', '-F', 'filename', 'async_pq']
+00:32:48,343 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_pq.ko.gz
+00:32:48,343 INFO    : Running... ['modinfo', '-F', 'filename', 'raid6_pq']
+00:32:48,350 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/lib/raid6/raid6_pq.ko.gz
+00:32:48,350 INFO    : Running... ['modinfo', '-F', 'filename', 'async_xor']
+00:32:48,356 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_xor.ko.gz
+00:32:48,356 INFO    : Running... ['modinfo', '-F', 'filename', 'xor']
+00:32:48,362 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/xor.ko.gz
+00:32:48,362 INFO    : Running... ['modinfo', '-F', 'filename', 'async_memcpy']
+00:32:48,368 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_memcpy.ko.gz
+00:32:48,369 INFO    : Running... ['modinfo', '-F', 'filename', 'async_tx']
+00:32:48,375 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/crypto/async_tx/async_tx.ko.gz
+00:32:48,375 INFO    : Running... ['modinfo', '-F', 'filename', 'raid1']
+00:32:48,381 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid1.ko.gz
+00:32:48,381 INFO    : Running... ['modinfo', '-F', 'filename', 'raid0']
+00:32:48,387 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/md/raid0.ko.gz
+00:32:48,388 INFO    : Running... ['modinfo', '-F', 'filename', 'nfs']
+00:32:48,397 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/nfs/nfs.ko.gz
+00:32:48,398 INFO    : Running... ['modinfo', '-F', 'filename', 'lockd']
+00:32:48,405 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/lockd/lockd.ko.gz
+00:32:48,405 INFO    : Running... ['modinfo', '-F', 'filename', 'fscache']
+00:32:48,411 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/fscache/fscache.ko.gz
+00:32:48,412 INFO    : Running... ['modinfo', '-F', 'filename', 'auth_rpcgss']
+00:32:48,418 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.gz
+00:32:48,418 INFO    : Running... ['modinfo', '-F', 'filename', 'nfs_acl']
+00:32:48,424 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/nfs_common/nfs_acl.ko.gz
+00:32:48,424 INFO    : Running... ['modinfo', '-F', 'filename', 'sunrpc']
+00:32:48,433 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/sunrpc/sunrpc.ko.gz
+00:32:48,433 INFO    : Running... ['modinfo', '-F', 'filename', '8021q']
+00:32:48,439 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/8021q/8021q.ko.gz
+00:32:48,439 INFO    : Running... ['modinfo', '-F', 'filename', 'garp']
+00:32:48,446 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/802/garp.ko.gz
+00:32:48,446 INFO    : Running... ['modinfo', '-F', 'filename', 'stp']
+00:32:48,452 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/802/stp.ko.gz
+00:32:48,452 INFO    : Running... ['modinfo', '-F', 'filename', 'llc']
+00:32:48,458 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/llc/llc.ko.gz
+00:32:48,458 INFO    : Running... ['modinfo', '-F', 'filename', 'mlx4_ib']
+00:32:48,466 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/hw/mlx4/mlx4_ib.ko.gz
+00:32:48,466 INFO    : Running... ['modinfo', '-F', 'filename', 'mlx4_en']
+00:32:48,473 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/mlx4/mlx4_en.ko.gz
+00:32:48,473 INFO    : Running... ['modinfo', '-F', 'filename', 'mlx4_core']
+00:32:48,481 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/mlx4/mlx4_core.ko.gz
+00:32:48,481 INFO    : Running... ['modinfo', '-F', 'filename', 'ib_ipoib']
+00:32:48,488 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/ulp/ipoib/ib_ipoib.ko.gz
+00:32:48,488 INFO    : Running... ['modinfo', '-F', 'filename', 'ib_cm']
+00:32:48,494 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_cm.ko.gz
+00:32:48,495 INFO    : Running... ['modinfo', '-F', 'filename', 'ib_sa']
+00:32:48,501 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_sa.ko.gz
+00:32:48,501 INFO    : Running... ['modinfo', '-F', 'filename', 'ib_mad']
+00:32:48,508 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_mad.ko.gz
+00:32:48,508 INFO    : Running... ['modinfo', '-F', 'filename', 'ib_core']
+00:32:48,515 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/infiniband/core/ib_core.ko.gz
+00:32:48,515 INFO    : Running... ['modinfo', '-F', 'filename', 'ipv6']
+00:32:48,524 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/net/ipv6/ipv6.ko.gz
+00:32:48,524 INFO    : Running... ['modinfo', '-F', 'filename', 'sg']
+00:32:48,530 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sg.ko.gz
+00:32:48,531 INFO    : Running... ['modinfo', '-F', 'filename', 'sd_mod']
+00:32:48,537 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sd_mod.ko.gz
+00:32:48,537 INFO    : Running... ['modinfo', '-F', 'filename', 'crc_t10dif']
+00:32:48,543 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/lib/crc-t10dif.ko.gz
+00:32:48,543 INFO    : Running... ['modinfo', '-F', 'filename', 'sr_mod']
+00:32:48,549 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/sr_mod.ko.gz
+00:32:48,549 INFO    : Running... ['modinfo', '-F', 'filename', 'cdrom']
+00:32:48,556 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/cdrom/cdrom.ko.gz
+00:32:48,556 INFO    : Running... ['modinfo', '-F', 'filename', 'ahci']
+00:32:48,563 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/ata/ahci.ko.gz
+00:32:48,563 INFO    : Running... ['modinfo', '-F', 'filename', 'i915']
+00:32:48,574 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/i915/i915.ko.gz
+00:32:48,574 INFO    : Running... ['modinfo', '-F', 'filename', 'e1000e']
+00:32:48,583 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/net/e1000e/e1000e.ko.gz
+00:32:48,583 INFO    : Running... ['modinfo', '-F', 'filename', 'ptp']
+00:32:48,589 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/ptp/ptp.ko.gz
+00:32:48,589 INFO    : Running... ['modinfo', '-F', 'filename', 'pps_core']
+00:32:48,595 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/pps/pps_core.ko.gz
+00:32:48,595 INFO    : Running... ['modinfo', '-F', 'filename', 'nouveau']
+00:32:48,609 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/nouveau/nouveau.ko.gz
+00:32:48,609 INFO    : Running... ['modinfo', '-F', 'filename', 'ttm']
+00:32:48,616 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/ttm/ttm.ko.gz
+00:32:48,616 INFO    : Running... ['modinfo', '-F', 'filename', 'drm_kms_helper']
+00:32:48,623 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/drm_kms_helper.ko.gz
+00:32:48,623 INFO    : Running... ['modinfo', '-F', 'filename', 'drm']
+00:32:48,631 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/gpu/drm/drm.ko.gz
+00:32:48,632 INFO    : Running... ['modinfo', '-F', 'filename', 'i2c_algo_bit']
+00:32:48,638 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/i2c/algos/i2c-algo-bit.ko.gz
+00:32:48,638 INFO    : Running... ['modinfo', '-F', 'filename', 'i2c_core']
+00:32:48,644 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/i2c/i2c-core.ko.gz
+00:32:48,645 INFO    : Running... ['modinfo', '-F', 'filename', 'mxm_wmi']
+00:32:48,651 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/platform/x86/mxm-wmi.ko.gz
+00:32:48,651 INFO    : Running... ['modinfo', '-F', 'filename', 'video']
+00:32:48,657 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/acpi/video.ko.gz
+00:32:48,657 INFO    : Running... ['modinfo', '-F', 'filename', 'output']
+00:32:48,663 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/video/output.ko.gz
+00:32:48,664 INFO    : Running... ['modinfo', '-F', 'filename', 'wmi']
+00:32:48,670 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/platform/x86/wmi.ko.gz
+00:32:48,670 INFO    : Running... ['modinfo', '-F', 'filename', 'iscsi_ibft']
+00:32:48,676 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/firmware/iscsi_ibft.ko.gz
+00:32:48,676 INFO    : Running... ['modinfo', '-F', 'filename', 'iscsi_boot_sysfs']
+00:32:48,682 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/iscsi_boot_sysfs.ko.gz
+00:32:48,683 INFO    : Running... ['modinfo', '-F', 'filename', 'pcspkr']
+00:32:48,688 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/input/misc/pcspkr.ko.gz
+00:32:48,689 INFO    : Running... ['modinfo', '-F', 'filename', 'edd']
+00:32:48,695 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/firmware/edd.ko.gz
+00:32:48,695 INFO    : Running... ['modinfo', '-F', 'filename', 'iscsi_tcp']
+00:32:48,701 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/iscsi_tcp.ko.gz
+00:32:48,701 INFO    : Running... ['modinfo', '-F', 'filename', 'libiscsi_tcp']
+00:32:48,708 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libiscsi_tcp.ko.gz
+00:32:48,708 INFO    : Running... ['modinfo', '-F', 'filename', 'libiscsi']
+00:32:48,714 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/libiscsi.ko.gz
+00:32:48,714 INFO    : Running... ['modinfo', '-F', 'filename', 'scsi_transport_iscsi']
+00:32:48,721 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/drivers/scsi/scsi_transport_iscsi.ko.gz
+00:32:48,721 INFO    : Running... ['modinfo', '-F', 'filename', 'squashfs']
+00:32:48,728 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/squashfs/squashfs.ko.gz
+00:32:48,728 INFO    : Running... ['modinfo', '-F', 'filename', 'cramfs']
+00:32:48,734 INFO    : /lib/modules/2.6.32-431.el6.x86_64/kernel/fs/cramfs/cramfs.ko.gz
+Running... /bin/mount -n -t selinuxfs -o defaults /selinux /mnt/sysimage/selinux
+Running... /bin/mount -n -t usbfs -o defaults /proc/bus/usb /mnt/sysimage/proc/bus/usb
+Running... /bin/umount /mnt/stage2
+00:48:45,196 INFO    : Running... ['/usr/sbin/authconfig', '--update', '--nostart', '--enableshadow', '--passalgo=sha512', '--enablefingerprint']
+00:48:45,723 INFO    : Running... ['/usr/sbin/lokkit', '--quiet', '--nostart', '-f', '--service=ssh']
+00:48:45,761 INFO    : Running... ['/usr/sbin/lokkit', '--quiet', '--nostart', '--selinux=enforcing']
+00:48:47,434 INFO    : Running... ['/sbin/grub-install', '--just-copy']
+00:48:47,856 INFO    : Running... ['/sbin/grub', '--batch', '--no-floppy', '--device-map=/boot/grub/device.map']
+00:48:48,329 INFO    : 
+00:48:48,329 INFO    : 
+00:48:48,329 INFO    :     GNU GRUB  version 0.97  (640K lower / 3072K upper memory)
+00:48:48,329 INFO    : 
+00:48:48,330 INFO    :  [ Minimal BASH-like line editing is supported.  For the first word, TAB
+00:48:48,330 INFO    :    lists possible command completions.  Anywhere else TAB lists the possible
+00:48:48,330 INFO    :    completions of a device/filename.]
+00:48:48,330 INFO    : grub> root (hd0,0)
+00:48:48,330 INFO    :  Filesystem type is ext2fs, partition type 0x83
+00:48:48,330 INFO    : grub> install --stage2=/boot/grub/stage2 /grub/stage1 d (hd0) /grub/stage2 p (hd0,0)/grub/grub.conf
+00:48:48,330 INFO    : grub> 
+00:48:48,378 INFO    : Running... ['dmsetup', 'info', '--columns', '--noheadings', '-o', 'devno', '/dev/sda2']
+00:48:48,390 ERROR   : Device sda2 not found
+00:48:48,390 ERROR   : Command failed
