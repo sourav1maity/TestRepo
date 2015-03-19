@@ -1,5 +1,4 @@
 18:55:13,530 INFO    : kernel command line: method=nfs:10.33.130.1:/var/ftp/pub/os/CentOS/x64 lang=us keymap=us ip=dhcp ksdevice=eth0 noipv6 initrd=CentOS/x64/initrd.img ramdisk_size=10000 BOOT_IMAGE=CentOS/x64/vmlinuz 
-
 18:55:13,530 WARNING : method= is deprecated.  Please use repo= instead.
 18:55:13,530 DEBUG   : readNetInfo /tmp/s390net not found, early return
 18:55:13,530 INFO    : anaconda version 13.21.215 on x86_64 starting
